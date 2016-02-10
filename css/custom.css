@@ -93,8 +93,8 @@ nav a.contact:hover{
     background: #006890;
 }
 #pbeta-slide1:before{
-    
-background: none;
+
+    background: none;
 }
 
 .pbeta-slide{
@@ -128,9 +128,9 @@ background: none;
 
 .pbeta-slide .background-image-holder{
 
-background-size: cover !important;
+    background-size: cover !important;
 
-background-position: 50% !important;
+    background-position: 50% !important;
 }
 
 /* -----------
@@ -518,7 +518,7 @@ h5.caso-exito-bajada{
 .pbeta-cafe{background: url(../img/background-pbeta-cafe.jpg)no-repeat;padding: 122px 0;background-size: cover;background-position: 50% 50%;position: relative;z-index: 1;}
 
 .pbeta-cafe:before{
-    content: 'Â ';
+    content: 'Ã‚Â ';
     position: absolute;
     top: 0;
     left: 0;
@@ -540,10 +540,10 @@ h5.caso-exito-bajada{
     padding: 8px 48px;
 }
 .pbeta-cafe a.btn-white:hover{
-    
-background: #03233B;
-    
-color: white;
+
+    background: #03233B;
+
+    color: white;
 }
 
 @media (max-width: 476px){
@@ -1020,14 +1020,14 @@ body:after{
 .nav-servicios{padding: 0; margin: 0;text-align: center;}
 .nav-servicios li{}
 .nav-servicios li a{
-                    color: white;
-                    font-size: 14px;
-                    font-weight: 400;
-                    padding: 18px 0 1px;
-                    display: inline-block;
-                    border-bottom: 2px solid #0BA9F3;
-                    margin-bottom: 4px;
-                    }
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 18px 0 1px;
+    display: inline-block;
+    border-bottom: 2px solid #0BA9F3;
+    margin-bottom: 4px;
+}
 .nav-servicios li a.active,.nav-servicios li a:hover{border-bottom: 2px solid white;}
 
 .servicio-pbeta{background: white;margin-bottom: 20px;padding-bottom: 98px;}
@@ -1074,8 +1074,10 @@ body:after{
 
 
 .pbeta-caso-exito{
-    padding: 0;
-    margin-bottom: 48px;
+
+    padding: 0;
+
+    margin-bottom: 48px;
 }
 
 .pbeta-caso-exito-header{
@@ -1178,12 +1180,37 @@ body:after{
 }
 
 .post-fila{
-    
+
 }
 .post-action{text-align: center;margin-top: 85px;padding-bottom: 82px;}
 
 .pbeta-caso-exito-post a.btn-beta{background: #1469a9;padding: 21px 25px;font-size: 17px;}
 
+
+
+/* -----------
+ *  COMO TRABAJAMOS SECCION
+ * ----------- */
+
+
+.pbeta-como-trabajamos{
+    text-align: center;
+}
+.pbeta-como-trabajamos-header{background: url(../img/background-pbeta-trabajamos-seccion.jpg)#57c0c0 50% no-repeat;background-size: cover;padding: 77px 0;}
+.pbeta-como-trabajamos-header h1{font-size: 61px; font-weight: bold;color: white;margin-bottom: 28px;}
+.pbeta-como-trabajamos-header p{color: white;font-weight: 400;font-size: 16px;}
+.pbeta-como-trabajamos-contenido{
+    background: white;
+    margin-bottom: 20px;
+    padding: 78px 0;
+}
+
+.pbeta-como-trabajamos-contenido h2{
+    font-size: 46px;
+    font-weight: bold;
+    /* padding: 78px 0; */
+}
+.pbeta-como-trabajamos-contenido p{}
 
 /* -----------
  *  FONTS
