@@ -22,6 +22,10 @@ $(document).ready(function () {
         offset: -59,
         speed: 800
     });
+    $('.inner-link2').smoothScroll({
+        offset: 80,
+        speed: 800
+    });
 
 
 
@@ -194,7 +198,7 @@ $(window).load(function () {
     // Sticky nav
 
     if (!$('nav').hasClass('overlay')) {
-        $('.nav-container').css('min-height', $('.navbar').height());
+        //$('.nav-container').css('min-height', $('.navbar').height());
     }
 
 

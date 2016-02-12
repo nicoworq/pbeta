@@ -1,6 +1,6 @@
 
 /* -----------
- *  MENU
+ *  NAV
  * ----------- */
 
 ul.menu li:last-child{
@@ -19,11 +19,19 @@ ul.menu li:last-child{
     -moz-transition: all 0.3s ease;
 }
 nav a:hover{color: #3a9cd7}
-
+.nav-1 .logo{
+    width: 268px;
+    min-width: 0;
+    margin-top: 25px;
+}
+nav ul li{
+    margin-right: 29px;
+}
 nav a.contact{
     border: 2px solid #1469a9;
     padding: 9px 26px;
     border-radius: 4px;
+    height: 40px;
 }
 
 nav a.contact:hover{
@@ -52,6 +60,7 @@ nav a.contact:hover{
         margin: 10px 0 !important;
     }
     .nav-1 .logo {
+        min-width: 290px;
         margin-top: 18px;
     }
     .nav-1 .mobile-toggle {
@@ -90,7 +99,14 @@ nav a.contact:hover{
 
 #pbeta-slide1{
     position: relative;
-    background: #006890;
+
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#006eb1+43,69bbde+100 */
+    background: #006eb1; /* Old browsers */
+    background: -moz-linear-gradient(45deg,  #006eb1 43%, #69bbde 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(45deg,  #006eb1 43%,#69bbde 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(45deg,  #006eb1 43%,#69bbde 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#006eb1', endColorstr='#69bbde',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
 }
 #pbeta-slide1:before{
 
@@ -105,6 +121,9 @@ nav a.contact:hover{
     text-transform: uppercase;
     font-weight: bold;
     margin-bottom: 20px;
+}
+.no-upper{
+    text-transform: none;
 }
 .pbeta-slide h5{
     font-weight: 400;
@@ -128,9 +147,18 @@ nav a.contact:hover{
 
 .pbeta-slide .background-image-holder{
 
-    background-size: cover !important;
+    /* background-size: cover !important; */
 
-    background-position: 50% !important;
+    background-position: 47% 45%!important;
+
+    height: 543px;
+}
+
+@media(max-width:990px){
+    #pbeta-slide1{
+        min-height: 0;
+        padding: 80px 0;
+    }
 }
 
 /* -----------
@@ -167,6 +195,39 @@ nav a.contact:hover{
 }
 .pbeta-redes li a img{
     width: 26px;
+}
+
+.pbeta-redes-header{
+    float: left;
+    margin-top: 31px;
+    margin-left: 60px;
+}
+.pbeta-redes-header li{
+    margin: 5px 6px;
+}
+.pbeta-redes-header li a{
+    background: #abbcc9;
+    width: 26px;
+    height: 26px;
+    padding-top: 5px;
+}
+.pbeta-redes-header li a i{
+    color: white;
+    font-size: 0px;
+    padding-left: 1px;
+}
+.pbeta-redes-header li a i:before{
+    font-size: 12px !important;
+    line-height: 12px;
+}
+
+.pbeta-redes-header li a .worq-icon-google:before{
+    font-size: 17px !important;
+    line-height: 16px;
+}
+.pbeta-redes-header li a .worq-icon-linkedin:before{
+    font-size: 14px !important;
+    line-height: 15px;
 }
 
 /* -----------
@@ -222,6 +283,7 @@ h5.comprometidos {
 @media (max-width: 990px){
     .intro-pbeta-img{
         padding: 20px 70px;
+        text-align: center !important;
     }
 }
 
@@ -518,7 +580,7 @@ h5.caso-exito-bajada{
 .pbeta-cafe{background: url(../img/background-pbeta-cafe.jpg)no-repeat;padding: 122px 0;background-size: cover;background-position: 50% 50%;position: relative;z-index: 1;}
 
 .pbeta-cafe:before{
-    content: 'Ã‚Â ';
+    content: 'Ãƒâ€šÃ‚Â ';
     position: absolute;
     top: 0;
     left: 0;
@@ -703,6 +765,7 @@ h5.caso-exito-bajada{
 .pbeta-contacto{
     background: url(../img/pattern-contacto.png)repeat #41b3af;
     padding: 73px 0 53px;
+    position: relative;
 }
 .pbeta-contacto-texto h2{
     color: white;
@@ -760,6 +823,7 @@ h5.caso-exito-bajada{
     height: auto;
     line-height: 36px;
     margin-bottom: 15px;
+    border: 1px solid white;
 }
 #form-contacto input[type=submit]{
     background: #03233b;
@@ -802,11 +866,6 @@ h5.caso-exito-bajada{
         font-size: 5vw;
         margin-bottom: 10px;
     }
-
-
-
-
-
 }
 
 
@@ -816,6 +875,7 @@ h5.caso-exito-bajada{
 .pbeta-news-home{
     background: #03233b;
     padding: 37px 0;
+    position: relative;
 }
 
 
@@ -847,8 +907,9 @@ h5.caso-exito-bajada{
     padding-right: 20px;
     color: #979797;
     font-size: 14px;
+    border: 1px solid white;
 }
-#form-suscribir-footer input[name=sex]{
+input[name=sex]{
     position: absolute;
     left: -100%;
     top: -10000%;
@@ -924,6 +985,38 @@ footer a{float: right;margin-top: 15px;}
 /* -----------
  *  UI
  * ----------- */
+.input-error{
+    border-color: red !important;
+}
+
+.container{padding: 0;}
+
+@media(max-width: 830px){
+    .container{    padding-left: 15px;
+                   padding-right: 15px;}
+}
+
+.typed-cursor{
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
 
 body:before{
     content: ' ';
@@ -956,18 +1049,17 @@ body:after{
 
 .ajaxing {
     position: absolute;
-    width: 100%;
-    height: 100%;
     z-index: 100;
     background: rgba(238,238,238,0.5);
     text-align: center;
     top: 0;
     left: 0;
-    padding: 24% 0;
     display: none;
+    bottom: 0;
+    right: 0;
 }
 
-@-webkit-keyframes rotating{from{-ms-transform:rotate(0deg);-moz-transform:rotate(0deg);-webkit-transform:rotate(0deg);-o-transform:rotate(0deg);transform:rotate(0deg)}to{-ms-transform:rotate(360deg);-moz-transform:rotate(360deg);-webkit-transform:rotate(360deg);-o-transform:rotate(360deg);transform:rotate(360deg)}}@keyframes rotating{from{-ms-transform:rotate(0deg);-moz-transform:rotate(0deg);-webkit-transform:rotate(0deg);-o-transform:rotate(0deg);transform:rotate(0deg)}to{-ms-transform:rotate(360deg);-moz-transform:rotate(360deg);-webkit-transform:rotate(360deg);-o-transform:rotate(360deg);transform:rotate(360deg)}}.ajaxing img{-webkit-animation:rotating 1s linear infinite;-moz-animation:rotating 1s linear infinite;-ms-animation:rotating 1s linear infinite;-o-animation:rotating 1s linear infinite;animation:rotating 1s linear infinite}
+@-webkit-keyframes rotating{from{-ms-transform:rotate(0deg);-moz-transform:rotate(0deg);-webkit-transform:rotate(0deg);-o-transform:rotate(0deg);transform:rotate(0deg)}to{-ms-transform:rotate(360deg);-moz-transform:rotate(360deg);-webkit-transform:rotate(360deg);-o-transform:rotate(360deg);transform:rotate(360deg)}}@keyframes rotating{from{-ms-transform:rotate(0deg);-moz-transform:rotate(0deg);-webkit-transform:rotate(0deg);-o-transform:rotate(0deg);transform:rotate(0deg)}to{-ms-transform:rotate(360deg);-moz-transform:rotate(360deg);-webkit-transform:rotate(360deg);-o-transform:rotate(360deg);transform:rotate(360deg)}}.ajaxing img{-webkit-animation:rotating 1s linear infinite;-moz-animation:rotating 1s linear infinite;-ms-animation:rotating 1s linear infinite;-o-animation:rotating 1s linear infinite;animation:rotating 1s linear infinite;position: absolute;top: 50%;margin-top: -16px;}
 
 .btn-beta{
     color: white;
@@ -1061,6 +1153,7 @@ body:after{
     background-size: cover;
     background-position: 50%;
     margin-top: 62px;
+    display: block;
     padding: 36px 45px;
 }
 .servicio-imagen h4{font-size: 30px;color: white;font-weight: bold;}
@@ -1211,6 +1304,115 @@ body:after{
     /* padding: 78px 0; */
 }
 .pbeta-como-trabajamos-contenido p{}
+
+
+/* -----------
+ *  MARKETING RESPONSABLE
+ * ----------- */
+
+.pbeta-marketing-responsable{}
+.pbeta-marketing-responsable-header{
+    background: url(../img/background-marketing-responsable.jpg)#3794cf 50% no-repeat;
+    background-size: cover;
+    padding: 128px 0;
+    text-align: center;
+}
+.pbeta-marketing-responsable-header h1{
+    color: white;
+    font-weight: bold;
+    font-size: 61px;
+}
+
+@media(max-width : 752px){
+    .pbeta-marketing-responsable-header h1{
+        font-size: 11vw;
+        line-height: 12vw;
+    }
+}
+
+.pbeta-marketing-responsable-contenido{
+    text-align: center;
+    padding-top: 55px;
+    background: white;
+    padding-bottom: 84px;
+}
+.pbeta-marketing-responsable-contenido h2{
+    font-weight: bold;
+    font-size: 46px;
+    color: #03233b;
+    text-align: center;
+    margin-bottom: 35px;
+}
+.pbeta-marketing-responsable-contenido p{
+    color: #8e8f91;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+.pbeta-marketing-responsable-padding{
+    padding: 0 78px;
+}
+
+.pbeta-marketing-responsable-padding p.first{
+    padding-right: 41px;
+}
+.pbeta-marketing-responsable-padding p.second{
+    padding-left: 25px;
+}
+
+@media(max-width:993px){
+    .pbeta-marketing-responsable-padding p.second , .pbeta-marketing-responsable-padding p.first{padding: 0;}
+}
+@media(max-width:700px){
+    .pbeta-marketing-responsable-padding{padding: 0;}
+}
+
+.pbeta-empresas-ong{
+    background: #f4f4f4;
+    padding-top: 64px;
+    text-align: center;
+    padding-bottom: 76px;
+}
+.pbeta-empresas-ong-contenido{}
+.pbeta-empresas-ong img{}
+.pbeta-empresas-ong h2{
+    color: #1a9831;
+    font-size: 36px;
+    font-weight: bold;
+    margin-top: 39px;
+}
+.pbeta-empresas-ong p{
+    font-size: 13px;
+    font-weight: 400;
+    color: #8b8d8e;
+    margin-top: -2px;
+    line-height: 16px;
+}
+
+.pbeta-dar-para-crecer{text-align: center; background: url(../img/background-dar-para-crecer.jpg) no-repeat 50% white;display: inline-block;width: 100%;}
+
+.pbeta-dar-para-crecer-contenido{
+    width: 497px;
+    margin: 0 auto;
+    background: white;
+    padding: 77px 0;
+}
+
+.pbeta-dar-para-crecer h3{
+    font-weight: bold;
+    color: #03233b;
+    margin-bottom: 34px;
+}
+.pbeta-dar-para-crecer p{
+    line-height: 28px;
+    margin-bottom: 30px;
+}
+
+@media(max-width:700px){
+    .pbeta-dar-para-crecer{}
+    .pbeta-dar-para-crecer-contenido{width: 100%; padding: 35px 20px;}
+}
 
 /* -----------
  *  FONTS

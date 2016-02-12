@@ -1,17 +1,13 @@
 <!DOCTYPE html>
 <html lang="es">
     <?php include_once './layout/head.php'; ?>
+
     <body>
-
-
         <?php include_once './layout/nav.php'; ?>
-
-
-
         <div class="main-container">
             <a id="home" class="in-page-link"></a>
 
-            <section id="pbeta-slide1" class="header header-5 fixed-header pbeta-slide">
+            <section id="pbeta-slide1" class="header header-5 fixed-header parallax pbeta-slide">
                 <div class="background-image-holder fadeIn" style="background: url(img/background-pbeta-1.jpg);">
                     <img alt="Background Image" class="background-image" src="img/background-pbeta-1.jpg" style="display: none;">
                 </div>
@@ -19,8 +15,8 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-sm-12 text-left">
-                            <h1 class="text-white">Comprometidos<br/>
-                                con los resultados|</h1>
+                            <h1 class="text-white">Comprometidos con<br/>
+                                <span class="texto"></span> <span class="typed-cursor">|</span></h1>
                             <h5 class="text-white">+ Somos el equipo de marketing de tu proyecto.</h5>
                             <a href="#">Conocenos</a>
                         </div>
@@ -43,8 +39,8 @@
                             <h4>Agencia de Marketing
                                 Responsable</h4>
                             <p>
-                                ¿Por qué Marketing Responsable? por que contamos con un equipo de profesionales en distintas áreas que está en constante búsqueda de resultados y mejoras para cada uno de nuestros clientes. <a href="#" class="ademas">Y además...</a></p>
-                            <a href="" class="btn-beta btn-azul">Conocé nuestros servicios</a>
+                                ¿Por qué Marketing Responsable? por que contamos con un equipo de profesionales en distintas áreas que está en constante búsqueda de resultados y mejoras para cada uno de nuestros clientes. <a href="#" class="ademas" style="display: none">Y además...</a></p>
+                            <a href="servicios.php" class="btn-beta btn-azul">Conocé nuestros servicios</a>
                         </div>
 
 
@@ -250,7 +246,7 @@
                             <h2 class="text-white">¿Cómo trabajamos?</h2>
                             <h5 class="text-white">“Acompañamos el crecimiento sostenido de cada proyecto con una estrategia basada <br/>
                                 en las necesidades de nuestros clientes y el mix justo de herramientas de marketing”</h5>
-                            <a class="btn-beta btn-deep-blue" href="#">Ver esquema de trabajo</a>
+                            <a class="btn-beta btn-deep-blue" href="como-trabajamos.php">Ver esquema de trabajo</a>
 
                         </div>
                     </div>
@@ -274,7 +270,7 @@
                                 nos gustaría conocerte y saber más<br/>
                                 sobre tu proyecto</h2>
 
-                            <a class="btn-beta btn-white" href="#">Tomemos un café</a>
+                            <a class="btn-beta btn-white inner-link" href="#contacto">Tomemos un café</a>
 
                         </div>
                     </div>
@@ -312,6 +308,9 @@
 
 
             <section class="pbeta-news-home">
+                <div class="ajaxing">
+                    <img src="img/loader.png" alt="Loading">
+                </div>  
                 <div class="container">
                     <div class="row">
 
@@ -320,10 +319,7 @@
                         </div>
                         <div class="col-md-4 col-sm-12 col-xs-12">
 
-                            <form id="form-suscribir-footer" action="" method="post">
-                                <div class="ajaxing">
-                                    <img src="img/loader.png" alt="Loading">
-                                </div>                                
+                            <form id="form-suscribir-footer" action="php/ajax-form-suscribir.php" method="post">
                                 <input type="text" name="sex" placeholder="Sex">
                                 <input type="text" name="email_visitante" placeholder="Ingresa tu email">
                                 <button><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAARCAYAAADUryzEAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAM9JREFUeNpi+v//PwMObA7EL4B4DRCz4VKHS7M0EH/8jwCbcBnCxIAdCAMxHxLfF4gXAjEzhko8Xsj6jwmWAjEzMV6A4QoshswCYkZiDcBlyHSYISxAX2hAMS5wA4hPALEFklgGEH8B4lKQASfRAoxYUALEP0DO+M9APvgLisZPFBjQDvKCGRBrElBYCVWHDPqBuJaYWKjEFwvkROEcYtNBJiUpUQ+L5lXomvFlprdosbMZiGNA0YauEJcBT4HYDYjfAPFaIA4B4l/YFAIEGADeMe8MWNVVCgAAAABJRU5ErkJggg=="/></button>
@@ -369,7 +365,7 @@
         <!--
     <script src="js/plugins.js"></script>
     <script src="js/scripts.js"></script>-->
-        <script src="js/production.js"></script>
+        <script src="js/production.min.js"></script>
 
 
 

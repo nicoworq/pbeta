@@ -7,8 +7,8 @@
         <link rel="icon" type="image/png" href="img/favicon.png">
 
         <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all">
-        <!-- <link href="css/icons.min.css" rel="stylesheet" type="text/css" media="all">-->
-        <link href="css/flexslider.min.css" rel="stylesheet" type="text/css" media="all">
+        <!-- <link href="css/icons.min.css" rel="stylesheet" type="text/css" media="all">
+        <link href="css/flexslider.min.css" rel="stylesheet" type="text/css" media="all">-->
         <link href="css/theme.min.css" rel="stylesheet" type="text/css" media="all">
         <link href="css/custom.css" rel="stylesheet" type="text/css" media="all">
         <!-- <link href="css/fonts.css" rel="stylesheet" type="text/css">-->

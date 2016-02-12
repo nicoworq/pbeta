@@ -9,7 +9,7 @@
 
         <div class="main-container main-container-servicios">
 
-
+            <a id="marketing-tradicional" class="in-page-link"></a>
             <section class="servicio-pbeta">
 
                 <div class="container">
@@ -54,16 +54,17 @@
                         </div>
                         <div class="row">
                             <div class="col-md-12">
-                                <div class="servicio-imagen" style="background-image:url(img/caso-exito1.jpg); ">
+                                <a class="servicio-imagen" href="caso-exito.php"  style="background-image:url(img/caso-exito1.jpg); ">
                                     <h5>Caso de éxito</h5>
                                     <h4>Pascal</h4>
-                                </div>
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-
+            
+            <a id="marketing-digital" class="in-page-link"></a>
             <section class="servicio-pbeta">
                 <div class="container">
                     <div class="servicio-container">
@@ -106,15 +107,16 @@
                         </div>
                         <div class="row">
                             <div class="col-md-12">
-                                <div class="servicio-imagen" style="background-image:url(img/caso-exito1.jpg); ">
+                                <a class="servicio-imagen" href="caso-exito.php"  style="background-image:url(img/caso-exito1.jpg); ">
                                     <h5>Caso de éxito</h5>
                                     <h4>Pascal</h4>
-                                </div>
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
+            <a id="diseño" class="in-page-link"></a>
             <section class="servicio-pbeta">
                 <div class="container">
                     <div class="servicio-container">
@@ -165,15 +167,16 @@
                         </div>
                         <div class="row">
                             <div class="col-md-12">
-                                <div class="servicio-imagen" style="background-image:url(img/caso-exito1.jpg); ">
+                                <a class="servicio-imagen" href="caso-exito.php"  style="background-image:url(img/caso-exito1.jpg); ">
                                     <h5>Caso de éxito</h5>
                                     <h4>Pascal</h4>
-                                </div>
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
+            <a id="web" class="in-page-link"></a>
             <section class="servicio-pbeta">
                 <div class="container">
                     <div class="servicio-container">
@@ -215,15 +218,16 @@
                         </div>
                         <div class="row">
                             <div class="col-md-12">
-                                <div class="servicio-imagen" style="background-image:url(img/caso-exito1.jpg); ">
+                                <a class="servicio-imagen" href="caso-exito.php"  style="background-image:url(img/caso-exito1.jpg); ">
                                     <h5>Caso de éxito</h5>
                                     <h4>Pascal</h4>
-                                </div>
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
+            <a id="marketing-responsable" class="in-page-link"></a>
             <section class="servicio-pbeta">
                 <div class="container">
                     <div class="servicio-container">
@@ -265,15 +269,16 @@
                         </div>
                         <div class="row">
                             <div class="col-md-12">
-                                <div class="servicio-imagen" style="background-image:url(img/caso-exito1.jpg); ">
+                                <a class="servicio-imagen" href="caso-exito.php"  style="background-image:url(img/caso-exito1.jpg); ">
                                     <h5>Caso de éxito</h5>
                                     <h4>Pascal</h4>
-                                </div>
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
+            <a id="acciones-impacto" class="in-page-link"></a>
             <section class="servicio-pbeta">
                 <div class="container">
                     <div class="servicio-container">
@@ -330,10 +335,10 @@
                         </div>
                         <div class="row">
                             <div class="col-md-12">
-                                <div class="servicio-imagen" style="background-image:url(img/caso-exito1.jpg); ">
+                                <a class="servicio-imagen" href="caso-exito.php"  style="background-image:url(img/caso-exito1.jpg); ">
                                     <h5>Caso de éxito</h5>
                                     <h4>Pascal</h4>
-                                </div>
+                                </a>
                             </div>
                         </div>
                     </div>

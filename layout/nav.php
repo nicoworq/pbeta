@@ -1,4 +1,4 @@
-<div class="nav-container" style="min-height: 78px;">	
+<div class="nav-container" style="min-height: 100px;">	
 
 
     <nav class="nav-1 fixed">
@@ -11,7 +11,7 @@
                         </a>
                     </div>
 
-                    <div class="col-md-1 col-sm-6 col-xs-6">                               
+                    <div class="col-md-1 col-sm-6 col-xs-6 hidden-lg hidden-md">                               
                         <div class="mobile-toggle">
                             <div class="upper"></div>
                             <div class="middle"></div>
@@ -19,7 +19,14 @@
                         </div>
                     </div>
 
-                    <div class="col-md-8 text-right col-sm-12 col-xs-12 menu-container">
+                    <div class="col-md-9 text-right col-sm-12 col-xs-12 menu-container">
+
+                        <ul class="pbeta-redes pbeta-redes-header">
+                            <li><a href="#"><i class="worq-icon-facebook"></i></a></li>
+                            <li><a href="#"><i class="worq-icon-linkedin"></i></a></li>
+                            <li><a href="#"><i class="worq-icon-google"></i></a></li>
+                        </ul>
+
                         <ul class="menu">
                             <li>
                                 <a class="inner-link" href="#home">
@@ -28,19 +35,19 @@
                             </li>
 
                             <li>
-                                <a class="inner-link" href="#institucional">
+                                <a class="inner-link" href="index.php#institucional">
                                     Institucional
                                 </a>
                             </li>
 
                             <li>
-                                <a class="inner-link" href="#servicios">
+                                <a class="inner-link" href="servicios.php">
                                     Servicios
                                 </a>
                             </li>
 
                             <li>
-                                <a class="inner-link" href="#trabajamos">
+                                <a class="inner-link" href="como-trabajamos.php">
                                     Como trabajamos
                                 </a>
                             </li>

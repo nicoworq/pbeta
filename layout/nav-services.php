@@ -1,4 +1,4 @@
-<div class="nav-container" style="min-height: 78px;">	
+<div class="nav-container" style="min-height: 100px;">	
     <nav class="nav-1 fixed">
         <div class="navbar">
             <div class="container">
@@ -26,19 +26,19 @@
                             </li>
 
                             <li>
-                                <a class="inner-link" href="#institucional">
+                                <a class="inner-link" href="index.php#institucional">
                                     Institucional
                                 </a>
                             </li>
 
                             <li>
-                                <a class="inner-link" href="#servicios">
+                                <a class="inner-link" href="servicios.php">
                                     Servicios
                                 </a>
                             </li>
 
                             <li>
-                                <a class="inner-link" href="#trabajamos">
+                                <a class="inner-link" href="como-trabajamos.php">
                                     Como trabajamos
                                 </a>
                             </li>
@@ -65,12 +65,12 @@
                 <div class="row">
                     <div class="col-md-12">
                         <ul class="nav-servicios">
-                            <li><a href="#">Marketing tradicional</a></li>
-                            <li><a href="#">Marketing digital</a></li>
-                            <li><a href="#">Diseño y publicidad</a></li>
-                            <li><a href="#">Web design</a></li>
-                            <li><a href="#">Marketing responsable</a></li>
-                            <li><a href="#">Acciones de impacto</a></li>
+                            <li><a class="inner-link2" href="#marketing-tradicional">Marketing tradicional</a></li>
+                            <li><a class="inner-link2" href="#marketing-digital">Marketing digital</a></li>
+                            <li><a class="inner-link2" href="#diseño">Diseño y publicidad</a></li>
+                            <li><a class="inner-link2" href="#web">Web design</a></li>
+                            <li><a class="inner-link2" href="#marketing-responsable">Marketing responsable</a></li>
+                            <li><a class="inner-link2" href="#acciones-impacto">Acciones de impacto</a></li>
                         </ul>
                     </div>
                 </div>

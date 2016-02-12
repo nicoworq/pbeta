@@ -1,6 +1,8 @@
 <a id="contacto" class="in-page-link"></a>
 <section class="pbeta-contacto">
-
+    <div class="ajaxing">
+        <img src="img/loader.png" alt="Loading">
+    </div>  
     <div class="container">
         <div class="row">
             <div class="col-md-6 pbeta-contacto-texto">
@@ -17,7 +19,8 @@
 
             </div>
             <div class="col-md-6 pbeta-contacto-form">
-                <form id="form-contacto" action="php/ajax-form-contacto.php">
+                <form id="form-contacto" action="php/ajax-form-contacto.php" method="post">
+                    <input type="text" placeholder="Sexo" name="sex">
                     <input type="text" placeholder="Nombre y Apellido" name="nombre">
                     <input type="text" placeholder="Email" name="email">
                     <input type="text" placeholder="Empresa" name="empresa">

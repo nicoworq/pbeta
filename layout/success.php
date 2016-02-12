@@ -55,7 +55,7 @@
         </div>
 
         <div class="row text-center">
-            <a href="#" class="btn-beta btn-deep-blue">Crea tu propia historia</a>
+            <a href="#contacto" class="inner-link btn-beta btn-deep-blue">Crea tu propia historia</a>
         </div>
     </div>
 </section>
