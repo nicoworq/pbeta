@@ -135,25 +135,7 @@
 
 
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-        <!--
-        <script src="./Launchkit - Multi-purpose Landing Page Template_files/ScrollToPlugin.min.js"></script>
-        <script src="./Launchkit - Multi-purpose Landing Page Template_files/bootstrap.min.js"></script>
-        <script src="./Launchkit - Multi-purpose Landing Page Template_files/TweenMax.min.js"></script>
-        
-        <script src="./Launchkit - Multi-purpose Landing Page Template_files/flexslider.min.js"></script>
-        <script src="./Launchkit - Multi-purpose Landing Page Template_files/smooth-scroll.min.js"></script>
-        <!--<script src="./Launchkit - Multi-purpose Landing Page Template_files/placeholders.min.js"></script>
-
-        <script src="./Launchkit - Multi-purpose Landing Page Template_files/parallax.js"></script>
-        -->
-
-        <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDgf-N1irsVUgupvllDsSa533VNJHzIeTo"></script>
-
-        <!--
-    <script src="js/plugins.js"></script>
-    <script src="js/scripts.js"></script>-->
-        <script src="js/production.js"></script>
+        <?php include_once './layout/footer-scripts.php'; ?>
 
 
 

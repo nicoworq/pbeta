@@ -12,9 +12,9 @@
                     para ayudarte en lo que necesites.</p>
 
                 <ul class="datos-contacto">                                
-                    <li><i class="contacto-icon contacto-icon-tel"></i>+54 0341 5304059</li>
+                    <li><i class="contacto-icon contacto-icon-tel"></i>+54 0341 576 6191 | Skype : ProyectoBeta</li>
                     <li><i class="contacto-icon contacto-icon-mail"></i>contacto@proyectobeta.com</li>                                
-                    <li><i class="contacto-icon contacto-icon-dir"></i>Bv.Oroño 456 PB, CP 2000. Rosario, Santa Fe, Argentina</li>
+                    <li><i class="contacto-icon contacto-icon-dir"></i>Bv.Oroño 353 PB, CP 2000. Rosario, Santa Fe, Argentina</li>
                 </ul>
 
             </div>
@@ -23,7 +23,7 @@
                     <input type="text" placeholder="Sexo" name="sex">
                     <input type="text" placeholder="Nombre y Apellido" name="nombre">
                     <input type="text" placeholder="Email" name="email">
-                    <input type="text" placeholder="Empresa" name="empresa">
+                    <input type="text" placeholder="Telefono" name="telefono">
                     <textarea name="mensaje" placeholder="Mensaje"></textarea>
                     <input class="btn-beta btn-deep-blue" type="submit" value="Contactanos">
                 </form>

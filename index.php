@@ -1,13 +1,20 @@
 <!DOCTYPE html>
 <html lang="es">
     <?php include_once './layout/head.php'; ?>
-
+    <script>
+        if (location.hash) {
+            setTimeout(function () {
+                window.scrollTo(0, 50);
+            }, 1);
+        }
+    </script>
     <body>
-        <?php include_once './layout/nav.php'; ?>
+        <a id="home" class="in-page-link"></a>
+        <?php $navActive = 'home';
+        include_once './layout/nav.php';
+        ?>
         <div class="main-container">
-            <a id="home" class="in-page-link"></a>
-
-            <section id="pbeta-slide1" class="header header-5 fixed-header parallax pbeta-slide">
+            <section id="pbeta-slide1" class="header header-5 fixed-header parallax pbeta-slide animate fadeIn one">
                 <div class="background-image-holder fadeIn" style="background: url(img/background-pbeta-1.jpg);">
                     <img alt="Background Image" class="background-image" src="img/background-pbeta-1.jpg" style="display: none;">
                 </div>
@@ -26,7 +33,7 @@
 
 
             <a id="institucional" class="in-page-link"></a>
-            <section class="features features-5 intro-pbeta">
+            <section class="features features-5 intro-pbeta animate fadeIn one">
                 <div class="container">
                     <div class="row v-align-children">
 
@@ -39,7 +46,7 @@
                             <h4>Agencia de Marketing
                                 Responsable</h4>
                             <p>
-                                ¿Por qué Marketing Responsable? por que contamos con un equipo de profesionales en distintas áreas que está en constante búsqueda de resultados y mejoras para cada uno de nuestros clientes. <a href="#" class="ademas" style="display: none">Y además...</a></p>
+                                ¿Por qué Marketing Responsable? por que contamos con un equipo de profesionales en distintas áreas que está en constante búsqueda de resultados y mejoras para cada uno de nuestros clientes. <a href="marketing-responsable.php" class="ademas">Y además...</a></p>
                             <a href="servicios.php" class="btn-beta btn-azul">Conocé nuestros servicios</a>
                         </div>
 
@@ -63,7 +70,7 @@
 
                     <div class="row row-servicios1">
                         <div class="col-sm-4 text-center">
-                            <div class="pbeta-servicio servicio1">
+                            <a href="servicios.php#marketing-tradicional" class="pbeta-servicio servicio1">
                                 <div class="servicios-sprite-container">
                                     <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                                          viewBox="0 0 133.2 138.6"  xml:space="preserve">
@@ -83,10 +90,10 @@
                                 </div>
 
                                 <h5>Marketing tradicional</h5>
-                            </div>
+                            </a>
                         </div>
                         <div class="col-sm-4 text-center ">
-                            <div class="pbeta-servicio servicio2">
+                            <a href="servicios.php#marketing-digital"  class="pbeta-servicio servicio2">
                                 <div class="servicios-sprite-container">
                                     <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                                          viewBox="0 0 133.2 138.6"  xml:space="preserve">
@@ -107,10 +114,10 @@
                                     </svg>
                                 </div>
                                 <h5>Marketing digital</h5>
-                            </div>
+                            </a>
                         </div>
                         <div class="col-sm-4 text-center">
-                            <div class="pbeta-servicio servicio3">
+                            <a href="servicios.php#diseño"  class="pbeta-servicio servicio3">
                                 <div class="servicios-sprite-container">
                                     <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                                          viewBox="0 0 133.2 138.6"  xml:space="preserve">
@@ -139,12 +146,12 @@
                                     </svg>
                                 </div>
                                 <h5>Diseño y publicidad</h5>
-                            </div>
+                            </a>
                         </div>
                     </div>
                     <div class="row row-servicios2">
                         <div class="col-sm-4 text-center">
-                            <div class="pbeta-servicio servicio4">
+                            <a href="servicios.php#web"  class="pbeta-servicio servicio4">
                                 <div class="servicios-sprite-container">
                                     <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                                          viewBox="0 0 133.2 138.6"  xml:space="preserve">
@@ -165,10 +172,10 @@
                                 </div>
                                 <h5>Web design de<br/>
                                     alta performance</h5>
-                            </div>
+                            </a>
                         </div>
                         <div class="col-sm-4 text-center ">
-                            <div class="pbeta-servicio servicio5">
+                            <a href="servicios.php#marketing-responsable"  class="pbeta-servicio servicio5">
                                 <div class="servicios-sprite-container">
                                     <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                                          viewBox="0 0 133.2 138.6"  xml:space="preserve">
@@ -189,10 +196,10 @@
                                 </div>
                                 <h5>Trabajamos en conjunto<br/>
                                     con ONG’S ¿Como?</h5>
-                            </div>
+                            </a>
                         </div>
                         <div class="col-sm-4 text-center">
-                            <div class="pbeta-servicio servicio6">
+                            <a href="servicios.php#acciones-impacto" class="pbeta-servicio servicio6">
                                 <div class="servicios-sprite-container">
                                     <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                                          viewBox="0 0 133.2 138.6"  xml:space="preserve">
@@ -227,7 +234,7 @@
                                     </svg>
                                 </div>
                                 <h5>¡Bonus track!<br/>Acciones de impacto</h5>
-                            </div>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -244,8 +251,8 @@
                     <div class="row">
                         <div class="col-sm-12 text-center">
                             <h2 class="text-white">¿Cómo trabajamos?</h2>
-                            <h5 class="text-white">“Acompañamos el crecimiento sostenido de cada proyecto con una estrategia basada <br/>
-                                en las necesidades de nuestros clientes y el mix justo de herramientas de marketing”</h5>
+                            <h5 class="text-white">Acompañamos el crecimiento sostenido de cada proyecto con una estrategia basada <br/>
+                                en las necesidades de nuestros clientes y el mix justo de herramientas de marketing</h5>
                             <a class="btn-beta btn-deep-blue" href="como-trabajamos.php">Ver esquema de trabajo</a>
 
                         </div>
@@ -253,7 +260,7 @@
                 </div>
             </section>
 
-            <?php include_once './layout/success.php'; ?>
+<?php include_once './layout/success.php'; ?>
 
             <section class="features pbeta-cafe">
 
@@ -293,7 +300,7 @@
                                 <p>Es por eso que a través del marketing acercamos a las empresas
                                     y a las organizaciones no gubernamentales en busca de sinergia
                                     y acciones en conjunto que traigan beneficios para ambas partes</p>
-                                <a class="btn-beta btn-dark" href="#">¡Quiero saber más!</a>
+                                <a class="btn-beta btn-dark" href="marketing-responsable.php">¡Quiero saber más!</a>
                             </div>
                         </div>
                     </div>
@@ -304,7 +311,7 @@
 
 
             <?php include_once './layout/contact.php'; ?>
-            <?php include_once './layout/map.php'; ?>
+<?php include_once './layout/map.php'; ?>
 
 
             <section class="pbeta-news-home">
@@ -327,9 +334,9 @@
                         </div>
                         <div class="col-md-4 pull-right col-sm-12 col-xs-12">
                             <ul class="pbeta-redes">
-                                <li><a href="#"><i class="worq-icon-facebook"></i></a></li>
-                                <li><a href="#"><i class="worq-icon-linkedin"></i></a></li>
-                                <li><a href="#"><i class="worq-icon-google"></i></a></li>
+                                <li><a href="https://www.facebook.com/ProyectoBetaMKT" target="blank"><i class="worq-icon-facebook"></i></a></li>
+                                <li><a href="https://www.linkedin.com/company/proyecto-beta?trk=biz-companies-cym" target="blank"><i class="worq-icon-linkedin"></i></a></li>
+                                <li><a href="https://plus.google.com/u/0/103707798096625533035/posts" target="blank"><i class="worq-icon-google"></i></a></li>
                             </ul>
                         </div>
 
@@ -342,30 +349,16 @@
 
 
 
-            <?php include_once './layout/footer.php'; ?>
+<?php include_once './layout/footer.php'; ?>
         </div>
 
 
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-        <!--
-        <script src="./Launchkit - Multi-purpose Landing Page Template_files/ScrollToPlugin.min.js"></script>
-        <script src="./Launchkit - Multi-purpose Landing Page Template_files/bootstrap.min.js"></script>
-        <script src="./Launchkit - Multi-purpose Landing Page Template_files/TweenMax.min.js"></script>
-        
-        <script src="./Launchkit - Multi-purpose Landing Page Template_files/flexslider.min.js"></script>
-        <script src="./Launchkit - Multi-purpose Landing Page Template_files/smooth-scroll.min.js"></script>
-        <!--<script src="./Launchkit - Multi-purpose Landing Page Template_files/placeholders.min.js"></script>
-
-        <script src="./Launchkit - Multi-purpose Landing Page Template_files/parallax.js"></script>
-        -->
-
-        <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDgf-N1irsVUgupvllDsSa533VNJHzIeTo"></script>
-
-        <!--
-    <script src="js/plugins.js"></script>
-    <script src="js/scripts.js"></script>-->
-        <script src="js/production.min.js"></script>
-
-
-
+<?php include_once './layout/footer-scripts.php'; ?>
+        <script>
+            $(document).ready(function () {
+                setTimeout(function () {
+                    $('a[href="' + location.hash + '"]').click();
+                }, 500);
+            });
+        </script>

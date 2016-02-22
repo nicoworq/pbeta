@@ -183,7 +183,7 @@ $(document).ready(function () {
     });
     
     $('.inner-link2').smoothScroll({
-        offset: -130,
+        offset: -120,
         speed: 800
     });
 
@@ -320,11 +320,11 @@ $(document).ready(function () {
     });
 
     if ($('#map_canvas').length > 0) {
-        var mapOptions = {center: new google.maps.LatLng(-32.9396285, -60.6543727), zoom: 12, mapTypeId: google.maps.MapTypeId.ROADMAP, scrollwheel: false};
+        var mapOptions = {center: new google.maps.LatLng(-32.9396285, -60.6543727), zoom: 14, mapTypeId: google.maps.MapTypeId.ROADMAP, scrollwheel: false};
         var map = new google.maps.Map(document.getElementById("map_canvas"), mapOptions);
 
 
-        var latLngMarker = new google.maps.LatLng(-32.939723, -60.652141, 17);
+        var latLngMarker = new google.maps.LatLng(-32.938558, -60.651931, 17);
         var marker = new google.maps.Marker({
             position: latLngMarker,
             map: map,

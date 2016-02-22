@@ -2,11 +2,7 @@
 <html lang="es">
     <?php include_once './layout/head.php'; ?>
     <body>
-
-
-        <?php include_once './layout/nav.php'; ?>
-
-
+        <?php $navActive = 'trabajamos'; include_once './layout/nav.php'; ?>
         <div class="main-container">
             <div class="pbeta-como-trabajamos">
                 <div class="pbeta-como-trabajamos-header">
@@ -18,29 +14,26 @@
                 </div>                    
                 <div class="pbeta-como-trabajamos-contenido">
                     <h2>Trabajamos mediante niveles</h2>
-                    <p>Analizamos tu situación actual, definimos en que nivel estas y cuales son tus necesidades, determinamos cuales son las herramientas<br/>
+                    <!--<p>Analizamos tu situación actual, definimos en que nivel estas y cuales son tus necesidades, determinamos cuales son las herramientas<br/>
                         indicadas para tu proyecto, analizamos, medimos y acompañamos los resultados obtenidos para poder brindarte nuevas herramientas<br/>
-                        que potencien tu crecimiento</p>
+                        que potencien tu crecimiento</p>-->
+                    
+                    <div class="pbeta-como-trabajamos-info">
+                        
+                        <img src="img/forma-de-trabajo-min.png" alt="Forma de Trabajo" />
+                    </div>
                 </div>
             </div>
-
             <?php include_once './layout/success.php'; ?>
-
-
             <?php include_once './layout/contact.php'; ?>
-
             <?php include_once './layout/map.php'; ?>
-
-
             <section class="pbeta-news-home">
                 <div class="container">
                     <div class="row">
-
                         <div class="col-md-4 col-sm-12 col-xs-12">
                             <h3>Suscribite a nuestro Newsletter<br/><span>Deja tu email tranquilo, no hacemos Spam.</span></h3>
                         </div>
                         <div class="col-md-4 col-sm-12 col-xs-12">
-
                             <form id="form-suscribir-footer" action="" method="post">
                                 <div class="ajaxing">
                                     <img src="img/loader.png" alt="Loading">
@@ -57,40 +50,9 @@
                                 <li><a href="#"><i class="worq-icon-google"></i></a></li>
                             </ul>
                         </div>
-
                     </div>
                 </div>
-
-
             </section>
-
-
-
-
             <?php include_once './layout/footer.php'; ?>
         </div>
-
-
-
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-        <!--
-        <script src="./Launchkit - Multi-purpose Landing Page Template_files/ScrollToPlugin.min.js"></script>
-        <script src="./Launchkit - Multi-purpose Landing Page Template_files/bootstrap.min.js"></script>
-        <script src="./Launchkit - Multi-purpose Landing Page Template_files/TweenMax.min.js"></script>
-        
-        <script src="./Launchkit - Multi-purpose Landing Page Template_files/flexslider.min.js"></script>
-        <script src="./Launchkit - Multi-purpose Landing Page Template_files/smooth-scroll.min.js"></script>
-        <!--<script src="./Launchkit - Multi-purpose Landing Page Template_files/placeholders.min.js"></script>
-
-        <script src="./Launchkit - Multi-purpose Landing Page Template_files/parallax.js"></script>
-        -->
-
-        <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDgf-N1irsVUgupvllDsSa533VNJHzIeTo"></script>
-
-        <!--
-    <script src="js/plugins.js"></script>
-    <script src="js/scripts.js"></script>-->
-        <script src="js/production.js"></script>
-
-
-
+         <?php include_once './layout/footer-scripts.php';

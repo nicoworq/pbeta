@@ -1,37 +1,51 @@
 <!DOCTYPE html>
 <html lang="es">
     <?php include_once './layout/head.php'; ?>
-    <body>
-
-
-        <?php include_once './layout/nav-services.php'; ?>
-
-
+    <script>
+        if (location.hash) {
+            setTimeout(function () {
+                window.scrollTo(0, 50);
+            }, 1);
+        }
+    </script>
+    <body class="servicios">
+        <?php
+        $navActive = 'servicios';
+        include_once './layout/nav-services.php';
+        ?>
         <div class="main-container main-container-servicios">
-
             <a id="marketing-tradicional" class="in-page-link"></a>
             <section class="servicio-pbeta">
-
                 <div class="container">
                     <div class="servicio-container">
                         <div class="row">
                             <div class="col-md-8">
-
                                 <h3 class="servicio-titulo">Marketing tradicional</h3>
-                                <h4 class="servicio-descripcion">Lorem Ipsum is simply dummy text of the printing and typesetting
-                                    industry lorem Ipsum has been the industry's.</h4>
+                                <h4 class="servicio-descripcion">El marketing es un proceso que engloba desde la creación de un producto o servicio hasta la 
 
+                                    última fase de postventa. En Proyecto Beta, este proceso continuo está constituido por 3 
+
+                                    conceptos:</h4>
                                 <div class="row">
-                                    <div class="col-md-6">
-                                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+                                    <div class="col-md-10">
+                                        <p>Definición de <strong>Estrategias</strong> para poder planificar el conjunto de acciones en busca de la consecución
+
+                                            de cualquier objetivo.</p>
+                                        <p>Creación de <strong>Propuestas de valor</strong>, en donde identificamos los componentes que se destacan en 
+
+                                            cada mercado y maximizamos la competitividad de la oferta, simplificando la elección de una 
+
+                                            determinada audiencia.</p>
+                                        <p><strong>Diferenciación</strong> de los atributos de cada producto o servicio para que pueda ser comunicado de 
+
+                                            forma tal, que sea percibido por los potenciales consumidores como un beneficio superior al de la 
+
+                                            competencia.</p>
                                     </div>
-                                    <div class="col-md-6">
-                                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
-                                    </div>
+
                                 </div>
                             </div>
                             <div class="col-md-4">
-
                                 <div class="servicio-icono">
                                     <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                                          viewBox="0 0 133.2 138.6"  xml:space="preserve">
@@ -49,11 +63,12 @@
                                     </g>
                                     </svg>
                                 </div>
-
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-md-12">
+                                <a href="#contacto" class="inner-link2 btn-beta btn-azul" style="margin-top: 30px;">Quiero saber más</a>
+                                
                                 <a class="servicio-imagen" href="caso-exito.php"  style="background-image:url(img/caso-exito1.jpg); ">
                                     <h5>Caso de éxito</h5>
                                     <h4>Pascal</h4>
@@ -63,7 +78,6 @@
                     </div>
                 </div>
             </section>
-            
             <a id="marketing-digital" class="in-page-link"></a>
             <section class="servicio-pbeta">
                 <div class="container">
@@ -71,15 +85,26 @@
                         <div class="row">
                             <div class="col-md-8">
                                 <h3 class="servicio-titulo">Marketing digital</h3>
-                                <h4 class="servicio-descripcion">Lorem Ipsum is simply dummy text of the printing and typesetting
-                                    industry lorem Ipsum has been the industry's.</h4>
+                                <h4 class="servicio-descripcion">Es la aplicación de las estrategias de comercialización llevadas a cabo en medios digitales.</h4>
                                 <div class="row">
-                                    <div class="col-md-6">
-                                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+                                    <div class="col-md-11">
+                                        <p>Vivimos
+
+                                            en un mundo donde el tiempo corre rápido y la inmediatez es moneda corriente en la actualidad. 
+
+                                            Aquí reside la necesidad de estar actualizados y en constante conversación con Internet.</p>
+
+                                        <p></p>
+                                        <p>Contamos con las herramientas necesarias para llevar a cabo cualquier acción de marketing digital 
+
+                                            en pos de conseguir los resultados que se buscan. Recabamos y analizamos la información del 
+
+                                            comportamiento del usuario en búsqueda de mejorar las prácticas y la usabilidad para obtener 
+
+                                            mejores resultados.</p>
+                                        <p>Nos hacemos cargo de generar e implementar la planificación digital de tu proyecto.</p>
                                     </div>
-                                    <div class="col-md-6">
-                                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
-                                    </div>
+
                                 </div>
                             </div>
                             <div class="col-md-4">
@@ -102,11 +127,12 @@
                                     </g>
                                     </svg>
                                 </div>
-
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-md-12">
+                                
+                                 <a href="#contacto" class="inner-link2 btn-beta btn-azul" style="margin-top: 30px;">Quiero saber más</a>
                                 <a class="servicio-imagen" href="caso-exito.php"  style="background-image:url(img/caso-exito1.jpg); ">
                                     <h5>Caso de éxito</h5>
                                     <h4>Pascal</h4>
@@ -123,15 +149,17 @@
                         <div class="row">
                             <div class="col-md-8">
                                 <h3 class="servicio-titulo">Diseño y publicidad</h3>
-                                <h4 class="servicio-descripcion">Lorem Ipsum is simply dummy text of the printing and typesetting
-                                    industry lorem Ipsum has been the industry's.</h4>
+
                                 <div class="row">
-                                    <div class="col-md-6">
-                                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+                                    <div class="col-md-11">
+                                        <p>Entendemos al diseño y a la publicidad como dos herramientas claves en los resultados finales de
+
+                                            las estrategias de marketing. Creemos que la imagen y la puesta en escena de las acciones a 
+
+                                            destacar son fundamentales para el éxito en la comunicación.</p>
+                                        <p>Para ello contamos con profesionales capaces de brindar soluciones comerciales de todo tipo.</p>
                                     </div>
-                                    <div class="col-md-6">
-                                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
-                                    </div>
+
                                 </div>
                             </div>
                             <div class="col-md-4">
@@ -167,6 +195,7 @@
                         </div>
                         <div class="row">
                             <div class="col-md-12">
+                                 <a href="#contacto" class="inner-link2 btn-beta btn-azul" style="margin-top: 0px;">Quiero saber más</a>
                                 <a class="servicio-imagen" href="caso-exito.php"  style="background-image:url(img/caso-exito1.jpg); ">
                                     <h5>Caso de éxito</h5>
                                     <h4>Pascal</h4>
@@ -183,15 +212,15 @@
                         <div class="row">
                             <div class="col-md-8">
                                 <h3 class="servicio-titulo">Web design de alta performance</h3>
-                                <h4 class="servicio-descripcion">Lorem Ipsum is simply dummy text of the printing and typesetting
-                                    industry lorem Ipsum has been the industry's.</h4>
+                                <h4 class="servicio-descripcion">Diseñamos sitios web profesionales hechos a medida para tu proyecto.</h4>
                                 <div class="row">
-                                    <div class="col-md-6">
-                                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+                                    <div class="col-md-11">
+                                        <p>No solo tenemos en cuenta las necesidades que se plantean, sino que también analizamos el 
+                                            mercado, el entorno y el público objetivo de cada situación.</p>
+                                        <p>Nuestros sitios web son realizados exclusivamente con el equipo de <br/> <a href="http://worq.com.ar" target="blank">worq.com.ar | Sitios web de 
+                                            alta performance</a>.</p>
                                     </div>
-                                    <div class="col-md-6">
-                                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
-                                    </div>
+
                                 </div>
                             </div>
                             <div class="col-md-4">
@@ -218,6 +247,7 @@
                         </div>
                         <div class="row">
                             <div class="col-md-12">
+                                 <a href="#contacto" class="inner-link2 btn-beta btn-azul" style="margin-top: 30px;">Quiero saber más</a>
                                 <a class="servicio-imagen" href="caso-exito.php"  style="background-image:url(img/caso-exito1.jpg); ">
                                     <h5>Caso de éxito</h5>
                                     <h4>Pascal</h4>
@@ -234,15 +264,23 @@
                         <div class="row">
                             <div class="col-md-8">
                                 <h3 class="servicio-titulo">Marketing responsable</h3>
-                                <h4 class="servicio-descripcion">Lorem Ipsum is simply dummy text of the printing and typesetting
-                                    industry lorem Ipsum has been the industry's.</h4>
+                                <h4 class="servicio-descripcion">“Cada 5 nuevos clientes comerciales adoptamos 1 ONG y trabajamos con ella sin cargo”</h4>
                                 <div class="row">
-                                    <div class="col-md-6">
-                                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+                                    <div class="col-md-11">
+                                        <p>Si bien tienen diferentes concepciones, tanto las empresas como las organizaciones sin fin de lucro 
+
+                                            necesitan ayuda o apoyo en cuestiones de comercialización. Desde nuestro lugar trabajamos como 
+
+                                            un puente entre ambos “mundos” con el objetivo de potenciar y mejorar la situación actual de 
+
+                                            diferentes instituciones.</p>
+                                        <p>Además durante todo el proceso de trabajo les brindamos a nuestros clientes la posibilidad de  
+
+                                            ayudar a estas organizaciones para que de forma conjunta mejoremos la calidad de vida de 
+
+                                            diversas comunidades.</p>
                                     </div>
-                                    <div class="col-md-6">
-                                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
-                                    </div>
+
                                 </div>
                             </div>
                             <div class="col-md-4">
@@ -269,6 +307,7 @@
                         </div>
                         <div class="row">
                             <div class="col-md-12">
+                                 <a href="#contacto" class="inner-link2 btn-beta btn-azul" style="margin-top: 30px;">Quiero saber más</a>
                                 <a class="servicio-imagen" href="caso-exito.php"  style="background-image:url(img/caso-exito1.jpg); ">
                                     <h5>Caso de éxito</h5>
                                     <h4>Pascal</h4>
@@ -285,15 +324,13 @@
                         <div class="row">
                             <div class="col-md-8">
                                 <h3 class="servicio-titulo">Acciones de alto impacto</h3>
-                                <h4 class="servicio-descripcion">Lorem Ipsum is simply dummy text of the printing and typesetting
-                                    industry lorem Ipsum has been the industry's.</h4>
+                                
                                 <div class="row">
-                                    <div class="col-md-6">
-                                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+                                    <div class="col-md-11">
+                                        <p>¡Bonus track! Además de crear estrategias y tácticas comerciales para potenciar empresas y organizaciones sin fin de lucro también creamos acciones especiales con un fin específico y un tiempo determinado que buscan resultados concretos. </p>
+                                        <p>Estas están fuera de la estrategia general de la empresa y la potencian a través de su diferencial extraordinario</p>
                                     </div>
-                                    <div class="col-md-6">
-                                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
-                                    </div>
+                                    
                                 </div>
                             </div>
                             <div class="col-md-4">
@@ -335,6 +372,7 @@
                         </div>
                         <div class="row">
                             <div class="col-md-12">
+                                 <a href="#contacto" class="inner-link2 btn-beta btn-azul" style="margin-top: 30px;">Quiero saber más</a>
                                 <a class="servicio-imagen" href="caso-exito.php"  style="background-image:url(img/caso-exito1.jpg); ">
                                     <h5>Caso de éxito</h5>
                                     <h4>Pascal</h4>
@@ -344,24 +382,15 @@
                     </div>
                 </div>
             </section>
-
-
-
-
-           <?php include_once './layout/contact.php'; ?>
-
-              <?php include_once './layout/map.php'; ?>
-
-
+            <?php include_once './layout/contact.php'; ?>
+            <?php include_once './layout/map.php'; ?>
             <section class="pbeta-news-home">
                 <div class="container">
                     <div class="row">
-
                         <div class="col-md-4 col-sm-12 col-xs-12">
                             <h3>Suscribite a nuestro Newsletter<br/><span>Deja tu email tranquilo, no hacemos Spam.</span></h3>
                         </div>
                         <div class="col-md-4 col-sm-12 col-xs-12">
-
                             <form id="form-suscribir-footer" action="" method="post">
                                 <div class="ajaxing">
                                     <img src="img/loader.png" alt="Loading">
@@ -378,40 +407,48 @@
                                 <li><a href="#"><i class="worq-icon-google"></i></a></li>
                             </ul>
                         </div>
-
                     </div>
                 </div>
-
-
             </section>
-
-
-
-
             <?php include_once './layout/footer.php'; ?>
         </div>
+        <?php include_once './layout/footer-scripts.php'; ?>
+        <script>
+            $(document).ready(function () {
+                setTimeout(function () {
+                    $('a[href="' + location.hash + '"]').click();
+                }, 800);
+            });
 
 
-
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-        <!--
-        <script src="./Launchkit - Multi-purpose Landing Page Template_files/ScrollToPlugin.min.js"></script>
-        <script src="./Launchkit - Multi-purpose Landing Page Template_files/bootstrap.min.js"></script>
-        <script src="./Launchkit - Multi-purpose Landing Page Template_files/TweenMax.min.js"></script>
-        
-        <script src="./Launchkit - Multi-purpose Landing Page Template_files/flexslider.min.js"></script>
-        <script src="./Launchkit - Multi-purpose Landing Page Template_files/smooth-scroll.min.js"></script>
-        <!--<script src="./Launchkit - Multi-purpose Landing Page Template_files/placeholders.min.js"></script>
-
-        <script src="./Launchkit - Multi-purpose Landing Page Template_files/parallax.js"></script>
-        -->
-
-        <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDgf-N1irsVUgupvllDsSa533VNJHzIeTo"></script>
-
-        <!--
-    <script src="js/plugins.js"></script>
-    <script src="js/scripts.js"></script>-->
-        <script src="js/production.js"></script>
+            var topMenu = $(".nav-servicios"),
+                    topMenuHeight = topMenu.outerHeight() + 80,
+                    // All list items
+                    menuItems = topMenu.find("li a"),
+                    // Anchors corresponding to menu items
+                    scrollItems = menuItems.map(function () {
+                        var item = $($(this).attr("href"));
+                        if (item.length) {
+                            return item;
+                        }
+                    });
 
 
+            $(window).scroll(function () {
 
+                var fromTop = $(this).scrollTop() + topMenuHeight;
+
+                var cur = scrollItems.map(function () {
+                    if ($(this).offset().top < fromTop)
+                        return this;
+                });
+
+                cur = cur[cur.length - 1];
+                var id = cur && cur.length ? cur[0].id : "";
+
+                menuItems
+                        .parent().removeClass("activo")
+                        .end().filter("[href='#" + id + "']").parent().addClass("activo");
+
+            });
+        </script>

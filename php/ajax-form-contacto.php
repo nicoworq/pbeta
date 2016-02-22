@@ -18,7 +18,7 @@ include_once 'class.phpmailer.php';
 
 $nombre = $_POST['nombre'];
 $mensaje = $_POST['mensaje'];
-$empresa = $_POST['empresa'];
+$telefono = $_POST['telefono'];
 $email = $_POST['email'];
 
 
@@ -26,7 +26,7 @@ $email = $_POST['email'];
 $cuerpo_email = "<h3>Nueva Consulta desde el Formulario Web</h3>
                     <p>Nombre: <b>{$nombre}</b> </p>                    
                     <p>Email: <b>{$email}</b></p>
-                    <p>Empresa: <b>{$empresa}</b></p>
+                    <p>Telefono: <b>{$telefono}</b></p>
                     <p>Mensaje: <b>{$mensaje}</b></p>";
 
 

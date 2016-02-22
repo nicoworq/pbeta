@@ -1,3 +1,47 @@
+/* -----------
+ *  INTRO ANIM
+ * ----------- */
+
+.animate {
+    -webkit-animation-duration: 0.8s;
+    animation-duration: 0.8s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+.one {
+    -webkit-animation-delay: 0.4s;
+    -moz-animation-delay: 0.4s;
+    animation-delay: 0.4s;
+}
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(1.01);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(1.01);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/*--keyframe pointer --*/
+.fadeIn { 
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+}
+
 
 /* -----------
  *  NAV
@@ -18,7 +62,7 @@ ul.menu li:last-child{
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
 }
-nav a:hover{color: #3a9cd7}
+nav a:hover, nav a.active{color: #3a9cd7}
 .nav-1 .logo{
     width: 268px;
     min-width: 0;
@@ -39,6 +83,19 @@ nav a.contact:hover{
     background: #1469a9;
 }
 
+.mobile-toggle .lower{
+    opacity: 1;
+}
+
+.mobile-toggle{
+    float: right;
+    height: 100px;
+    top: 0 !important;
+    padding-top: 36px;
+    padding-right: 20px;
+    position: relative;
+}
+
 @media (max-width: 1200px){
     nav a.contact{
         padding: 9px 10px;
@@ -53,7 +110,7 @@ nav a.contact:hover{
     .menu{
         float: left;
         text-align: left;
-        margin-top: 5px!important;
+        margin-top: 15px!important;
         margin-bottom: 20px !important;
     }
     .menu li{
@@ -63,15 +120,11 @@ nav a.contact:hover{
         min-width: 290px;
         margin-top: 18px;
     }
-    .nav-1 .mobile-toggle {
-        top: 2px !important;
-    }
+
 }
 
 @media (max-width: 767px){
-    .nav-1 .mobile-toggle {
-        top: 2px !important;
-    }
+
     .nav-1 .logo {
         margin-top: 24px;
     }
@@ -228,6 +281,10 @@ nav a.contact:hover{
 .pbeta-redes-header li a .worq-icon-linkedin:before{
     font-size: 14px !important;
     line-height: 15px;
+}
+
+@media(max-width:1200px){
+    .pbeta-redes-header{display: none;}
 }
 
 /* -----------
@@ -406,7 +463,7 @@ h5.comprometidos {
 .pbeta-servicio:hover{background: #194363;}
 .pbeta-servicio:hover svg{fill:white;}
 
-.pbeta-servicio{border: 1px solid #194363; border-radius: 5px;padding: 30px 27px;vertical-align: top;cursor: pointer;}
+.pbeta-servicio{border: 1px solid #194363; border-radius: 5px;padding: 30px 27px;vertical-align: top;cursor: pointer;display: block;}
 .pbeta-servicio h5{color: white;font-size: 17px;font-weight: 400;margin-bottom: 0;}
 
 .pbeta-servicio,svg{ 
@@ -571,6 +628,41 @@ h5.caso-exito-bajada{
     }
 }
 
+/* -----------
+ *  CLIENTES
+ * ----------- */
+
+.cliente {
+    text-align: center;
+}
+
+.cliente-row{margin-bottom: 40px;}
+
+.cliente-row{display: table;width: 100%;}
+
+.cliente-row .col-md-3,.cliente-row .col-md-4 {   
+    display: table-cell;
+    vertical-align: middle;
+    height: 100%;
+    float: none;}
+
+.features-2 .cliente-row img{margin: 0;}
+
+
+@media (max-width: 600px){
+
+    .cliente-row {
+        display: table;
+        width: auto;
+    }
+    
+    .cliente-row .col-md-3, .cliente-row .col-md-4{
+    display: table-cell;
+    float: none;
+    vertical-align: middle;
+}
+}
+
 
 /* -----------
  *  CAFE
@@ -580,7 +672,7 @@ h5.caso-exito-bajada{
 .pbeta-cafe{background: url(../img/background-pbeta-cafe.jpg)no-repeat;padding: 122px 0;background-size: cover;background-position: 50% 50%;position: relative;z-index: 1;}
 
 .pbeta-cafe:before{
-    content: 'Ãƒâ€šÃ‚Â ';
+    content: ' ';
     position: absolute;
     top: 0;
     left: 0;
@@ -964,6 +1056,10 @@ footer h3 , footer a{
 
 footer a{float: right;margin-top: 15px;}
 
+@media (max-width: 1650px){
+    footer{padding: 30px;}
+}
+
 @media (max-width: 992px){
     footer a{
         margin-top: 7px;
@@ -985,6 +1081,8 @@ footer a{float: right;margin-top: 15px;}
 /* -----------
  *  UI
  * ----------- */
+.main-container{z-index: 1;}
+
 .input-error{
     border-color: red !important;
 }
@@ -1025,7 +1123,7 @@ body:before{
     height: 688px;
     display: block;
     position: absolute;
-    bottom: 510px;
+    bottom: 500px;
     transform: rotate(180deg);
     background-position: 26% 0;
 }
@@ -1120,9 +1218,9 @@ body:after{
     border-bottom: 2px solid #0BA9F3;
     margin-bottom: 4px;
 }
-.nav-servicios li a.active,.nav-servicios li a:hover{border-bottom: 2px solid white;}
+.nav-servicios li.activo a,.nav-servicios li a:hover{border-bottom: 2px solid white;}
 
-.servicio-pbeta{background: white;margin-bottom: 20px;padding-bottom: 98px;}
+.servicio-pbeta{background: white;margin-bottom: 20px;padding-bottom: 98px;z-index: 10;}
 
 .servicio-pbeta .servicio-titulo{
     color: #0c2334;
@@ -1145,6 +1243,14 @@ body:after{
     font-size: 14px;
     color: #8b8d8e;
 }
+.servicio-pbeta p a{
+    color: #5E9DCB;
+    text-decoration: underline;
+    font-weight: 300;
+}
+.servicio-pbeta p a:hover{
+    color: #75BBEF;
+}
 .servicio-pbeta .servicio-icono{}
 .servicio-pbeta .servicio-icono svg{fill:#f0f0f0;}
 
@@ -1155,6 +1261,7 @@ body:after{
     margin-top: 62px;
     display: block;
     padding: 36px 45px;
+    display: none;
 }
 .servicio-imagen h4{font-size: 30px;color: white;font-weight: bold;}
 .servicio-imagen h5{color: #000000;font-size: 14px;font-weight: bold;text-transform: uppercase;margin-bottom: 5px;}
@@ -1305,6 +1412,9 @@ body:after{
 }
 .pbeta-como-trabajamos-contenido p{}
 
+.pbeta-como-trabajamos-info {
+    margin-top: 60px;
+}
 
 /* -----------
  *  MARKETING RESPONSABLE
