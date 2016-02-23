@@ -67,7 +67,7 @@
                         </div>
                         <div class="row">
                             <div class="col-md-12">
-                                <a href="#contacto" class="inner-link2 btn-beta btn-azul" style="margin-top: 30px;">Quiero saber más</a>
+                                <a href="#contacto" class="inner-link2 btn-beta btn-azul" style=" margin: 30px auto;width: 163px; display: block;">Quiero saber más</a>
                                 
                                 <a class="servicio-imagen" href="caso-exito.php"  style="background-image:url(img/caso-exito1.jpg); ">
                                     <h5>Caso de éxito</h5>
@@ -132,7 +132,7 @@
                         <div class="row">
                             <div class="col-md-12">
                                 
-                                 <a href="#contacto" class="inner-link2 btn-beta btn-azul" style="margin-top: 30px;">Quiero saber más</a>
+                                 <a href="#contacto" class="inner-link2 btn-beta btn-azul" style=" margin: 30px auto;width: 163px; display: block;">Quiero saber más</a>
                                 <a class="servicio-imagen" href="caso-exito.php"  style="background-image:url(img/caso-exito1.jpg); ">
                                     <h5>Caso de éxito</h5>
                                     <h4>Pascal</h4>
@@ -247,7 +247,7 @@
                         </div>
                         <div class="row">
                             <div class="col-md-12">
-                                 <a href="#contacto" class="inner-link2 btn-beta btn-azul" style="margin-top: 30px;">Quiero saber más</a>
+                                 <a href="#contacto" class="inner-link2 btn-beta btn-azul" style=" margin: 30px auto;width: 163px; display: block;">Quiero saber más</a>
                                 <a class="servicio-imagen" href="caso-exito.php"  style="background-image:url(img/caso-exito1.jpg); ">
                                     <h5>Caso de éxito</h5>
                                     <h4>Pascal</h4>
@@ -307,7 +307,7 @@
                         </div>
                         <div class="row">
                             <div class="col-md-12">
-                                 <a href="#contacto" class="inner-link2 btn-beta btn-azul" style="margin-top: 30px;">Quiero saber más</a>
+                                 <a href="#contacto" class="inner-link2 btn-beta btn-azul" style=" margin: 30px auto;width: 163px; display: block;">Quiero saber más</a>
                                 <a class="servicio-imagen" href="caso-exito.php"  style="background-image:url(img/caso-exito1.jpg); ">
                                     <h5>Caso de éxito</h5>
                                     <h4>Pascal</h4>
@@ -372,7 +372,7 @@
                         </div>
                         <div class="row">
                             <div class="col-md-12">
-                                 <a href="#contacto" class="inner-link2 btn-beta btn-azul" style="margin-top: 30px;">Quiero saber más</a>
+                                 <a href="#contacto" class="inner-link2 btn-beta btn-azul" style=" margin: 30px auto;width: 163px; display: block;">Quiero saber más</a>
                                 <a class="servicio-imagen" href="caso-exito.php"  style="background-image:url(img/caso-exito1.jpg); ">
                                     <h5>Caso de éxito</h5>
                                     <h4>Pascal</h4>

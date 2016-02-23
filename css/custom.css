@@ -62,7 +62,7 @@ ul.menu li:last-child{
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
 }
-nav a:hover, nav a.active{color: #3a9cd7}
+nav a:hover, nav a.active, nav .activo a{color: #3a9cd7}
 .nav-1 .logo{
     width: 268px;
     min-width: 0;
@@ -212,6 +212,9 @@ nav a.contact:hover{
         min-height: 0;
         padding: 80px 0;
     }
+    .pbeta-slide h1{
+        min-height: 100px;
+    }
 }
 
 /* -----------
@@ -353,9 +356,14 @@ h5.comprometidos {
     .pbeta-slide h1{
         font-size: 33px;
         line-height: 39px;
+        min-height: 78px;
     }
-    .pbeta-slide h5{
-
+    .intro-pbeta-img{
+        padding: 20px;
+        text-align: center !important;
+    }
+    .features-4 .feature, .features-5 .feature{
+        text-align: center !important;
     }
 
     #pbeta-slide1{
@@ -368,6 +376,7 @@ h5.comprometidos {
     .pbeta-slide h1{
         font-size: 25px;
         line-height: 39px;
+        /* min-height: 50px; */
     }
     .pbeta-slide h5{
 
@@ -655,12 +664,12 @@ h5.caso-exito-bajada{
         display: table;
         width: auto;
     }
-    
+
     .cliente-row .col-md-3, .cliente-row .col-md-4{
-    display: table-cell;
-    float: none;
-    vertical-align: middle;
-}
+        display: table-cell;
+        float: none;
+        vertical-align: middle;
+    }
 }
 
 
@@ -1041,6 +1050,13 @@ input[name=sex]{
     width: 100%;
 }
 
+@media(max-width:600px){
+    #map_canvas{
+
+        height: 200px;
+    }
+}
+
 /* -----------
  *  FOOTER
  * ----------- */
@@ -1268,6 +1284,54 @@ body:after{
 
 
 
+@media(max-width:1200px){
+    .nav-servicios li a{
+        font-size: 12px;
+    }
+    .nav-servicios li{}
+}
+@media(max-width:990px){
+    .nav-servicios li a{
+        font-size: 12px;
+    }
+    .nav-servicios li{
+        margin-right: 10px;
+    }
+}
+@media(max-width:830px){
+    .nav-servicios{display: none;}
+
+    .main-container-servicios{
+        padding-top: 0;
+    }
+}
+
+@media(max-width:700px){
+    .servicio-container{
+        padding: 0;
+    }
+
+    .servicio-pbeta .servicio-icono{padding: 0 60px;width: 300px;margin: 14px auto;}
+}
+
+@media(max-width:576px){
+    .servicio-pbeta .servicio-descripcion{
+        padding: 0;
+    }
+
+}
+@media(max-width:400px){
+    .servicio-pbeta .servicio-icono{
+        width: 100%;
+        padding: 0 10vw;
+        margin: 0;
+        margin-top: 20px;
+    }
+}
+
+
+
+
 /* -----------
  *  CASO EXITO SECCION
  * ----------- */
@@ -1416,6 +1480,25 @@ body:after{
     margin-top: 60px;
 }
 
+@media(max-width:700px){
+    .pbeta-como-trabajamos-header h1{
+        font-size: 50px;
+    }
+
+}
+@media(max-width:400px){
+    .pbeta-como-trabajamos-header h1{
+        font-size: 40px;
+        line-height: 47px;
+    }
+    .pbeta-como-trabajamos-header,    .pbeta-como-trabajamos-contenido  {
+        padding: 35px 0;
+    }
+    .pbeta-como-trabajamos-contenido h2{
+        font-size: 32px;
+        line-height: 38px;
+    }
+}
 /* -----------
  *  MARKETING RESPONSABLE
  * ----------- */
@@ -1524,6 +1607,16 @@ body:after{
     .pbeta-dar-para-crecer-contenido{width: 100%; padding: 35px 20px;}
 }
 
+@media(max-width: 540px){
+    .pbeta-marketing-responsable-header{
+        padding: 70px 0;
+    }
+    .pbeta-marketing-responsable-header h1{}
+
+    .pbeta-marketing-responsable-contenido{
+        padding: 35px 0;
+    }
+}
 /* -----------
  *  FONTS
  * ----------- */

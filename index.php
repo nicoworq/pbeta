@@ -10,9 +10,77 @@
     </script>
     <body>
         <a id="home" class="in-page-link"></a>
-        <?php $navActive = 'home';
-        include_once './layout/nav.php';
-        ?>
+
+        <div class="nav-container" style="min-height: 100px;">	
+            <nav class="nav-1 fixed">
+                <div class="navbar">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-3 col-sm-6 col-xs-6">
+                                <a href="index.php">
+                                    <img class="logo" alt="Logo Proyecto Beta" src="img/logo-proyecto-beta.svg">
+                                </a>
+                            </div>
+
+                            <div class="col-md-1 col-sm-6 col-xs-6 hidden-lg hidden-md">                               
+                                <div class="mobile-toggle">
+                                    <div class="upper"></div>
+                                    <div class="middle"></div>
+                                    <div class="lower"></div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-9 text-right col-sm-12 col-xs-12 menu-container">
+
+                                <ul class="pbeta-redes pbeta-redes-header">
+                                    <li><a href="https://www.facebook.com/ProyectoBetaMKT" target="blank"><i class="worq-icon-facebook"></i></a></li>
+                                    <li><a href="https://www.linkedin.com/company/proyecto-beta?trk=biz-companies-cym" target="blank"><i class="worq-icon-linkedin"></i></a></li>
+                                    <li><a href="https://plus.google.com/u/0/103707798096625533035/posts" target="blank"><i class="worq-icon-google"></i></a></li>
+                                </ul>
+
+                                <ul class="menu">
+                                    <li>
+                                        <a class="inner-link" href="#home">
+                                            Home
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a class="inner-link" href="#institucional">
+                                            Institucional
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a class="inner-link" href="servicios.php">
+                                            Servicios
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a class="inner-link" href="como-trabajamos.php">
+                                            Como trabajamos
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a class="inner-link" href="#exito">
+                                            Clientes
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="inner-link contact" href="#contacto">
+                                            Contacto
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
         <div class="main-container">
             <section id="pbeta-slide1" class="header header-5 fixed-header parallax pbeta-slide animate fadeIn one">
                 <div class="background-image-holder fadeIn" style="background: url(img/background-pbeta-1.jpg);">
@@ -260,7 +328,7 @@
                 </div>
             </section>
 
-<?php include_once './layout/success.php'; ?>
+            <?php include_once './layout/success.php'; ?>
 
             <section class="features pbeta-cafe">
 
@@ -311,7 +379,7 @@
 
 
             <?php include_once './layout/contact.php'; ?>
-<?php include_once './layout/map.php'; ?>
+            <?php include_once './layout/map.php'; ?>
 
 
             <section class="pbeta-news-home">
@@ -349,16 +417,52 @@
 
 
 
-<?php include_once './layout/footer.php'; ?>
+            <?php include_once './layout/footer.php'; ?>
         </div>
 
 
 
-<?php include_once './layout/footer-scripts.php'; ?>
+        <?php include_once './layout/footer-scripts.php'; ?>
         <script>
             $(document).ready(function () {
                 setTimeout(function () {
-                    $('a[href="' + location.hash + '"]').click();
-                }, 500);
+                    $('a[href*="' + location.hash + '"]').click();
+                }, 700);
+
+
+
+
+                var topMenu = $("ul.menu"),
+                        topMenuHeight = topMenu.outerHeight() + 80,
+                        // All list items
+                        menuItems = topMenu.find("li a"),
+                        // Anchors corresponding to menu items
+                        scrollItems = menuItems.map(function () {
+                            var item = $($(this).attr("href"));
+                            if (item.length) {
+                                return item;
+                            }
+                        });
+
+
+                $(window).scroll(function () {
+
+                    var fromTop = $(this).scrollTop() + topMenuHeight;
+
+                    var cur = scrollItems.map(function () {
+                        if ($(this).offset().top < fromTop)
+                            return this;
+                    });
+
+                    cur = cur[cur.length - 1];
+                    var id = cur && cur.length ? cur[0].id : "";
+
+                    menuItems
+                            .parent().removeClass("activo")
+                            .end().filter("[href='#" + id + "']").parent().addClass("activo");
+
+                });
+
+
             });
         </script>

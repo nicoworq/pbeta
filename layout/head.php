@@ -10,7 +10,7 @@
         <link href="css/icons.min.css" rel="stylesheet" type="text/css" media="all">
         <link href="css/flexslider.min.css" rel="stylesheet" type="text/css" media="all">-->
         <link href="css/theme.min.css" rel="stylesheet" type="text/css" media="all">
-        <link href="css/custom.css" rel="stylesheet" type="text/css" media="all">
+        <link href="css/custom.min.css" rel="stylesheet" type="text/css" media="all">
         <!-- <link href="css/fonts.css" rel="stylesheet" type="text/css">-->
         <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
     </head>
