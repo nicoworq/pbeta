@@ -105,19 +105,19 @@ nav a.contact:hover{
         font-size: 13px;
     }
     .nav-1 .logo{
-    margin-top: 29px;
-}
+        margin-top: 29px;
+    }
 }
 
 @media (max-width: 992px){
-    
+
     .nav-container{min-height:  60px;}
     .nav-1 .navbar{
         height: 60px;
     }
     .mobile-toggle{
-    padding-top: 19px;
-}
+        padding-top: 19px;
+    }
 
     .menu{
         float: left;
@@ -669,20 +669,37 @@ h5.caso-exito-bajada{
 
 .features-2 .cliente-row img{margin: 0;}
 
+.clientes-mobile{display: none;}
+
+@media(max-width:990px){
+
+    .clientes-desktop{display: none;}
+    .clientes-mobile{display: block;overflow: hidden;margin-left: -27px;}
+    .cliente-row .col-md-3,.cliente-row .col-md-4{}
+}
 
 @media (max-width: 600px){
 
-    .cliente-row {
-        display: table;
-        width: auto;
-    }
-
     .cliente-row .col-md-3, .cliente-row .col-md-4{
-        display: table-cell;
-        float: none;
-        vertical-align: middle;
+        display: block;
+        float: left;
+        min-height: 100px;
+        position: relative;
+    }
+    .clientes-mobile .col-xs-6{min-height: 100px;margin-bottom: 20px;position: relative;/* padding: 0; */}
+
+    .cliente{/* position: absolute; */ top:50%;left: 50%;}
+
+    .pbeta-exito{
+        padding: 35px 0;
+    }
+    .pbeta-exito h4{
+        line-height: 50px;
+        font-size: 36px;
     }
 }
+
+
 
 
 /* -----------
@@ -1309,6 +1326,7 @@ body:after{
     .nav-servicios li{
         margin-right: 10px;
     }
+    .servicio-pbeta{padding-bottom: 35px;}
 }
 @media(max-width:830px){
     .nav-servicios{display: none;}

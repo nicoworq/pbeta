@@ -345,7 +345,31 @@ $(document).ready(function () {
         return re.test(email);
     }
 
+    if($(window).width() < 600){
+        
+            setTimeout(function(){
+            $('.cliente').each(function(){
+            var c = $(this);
+            
+            var img = c.find('img'); 
+            
+            
+            c.css('position','absolute')
+            c.css('margin-top',(c.height() / 2) * -1)
+            
+            c.css('margin-left', (c.innerWidth()/2) *-1);           
+            
+        }) 
+                                                },700)
+    }
+    
 
+    
+    $('.menu a').click(function(){
+        
+        $('.nav-1').removeClass('nav-open');
+        
+    })
 
 
 });

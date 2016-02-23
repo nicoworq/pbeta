@@ -93,7 +93,7 @@
                             <h1 class="text-white">Comprometidos con<br/>
                                 <span class="texto"></span> <span class="typed-cursor">|</span></h1>
                             <h5 class="text-white">+ Somos el equipo de marketing de tu proyecto.</h5>
-                            <a href="#">Conocenos</a>
+                            <a class="inner-link" href="#contacto">Conocenos</a>
                         </div>
                     </div>
                 </div>                	
