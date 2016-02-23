@@ -50,6 +50,7 @@
 ul.menu li:last-child{
     margin-right: 0;
 }
+.nav-container{min-height: 100px;}
 .nav-1 .navbar {
     height: 100px;
     max-height: 100px;
@@ -103,9 +104,20 @@ nav a.contact:hover{
     nav a {
         font-size: 13px;
     }
+    .nav-1 .logo{
+    margin-top: 29px;
+}
 }
 
 @media (max-width: 992px){
+    
+    .nav-container{min-height:  60px;}
+    .nav-1 .navbar{
+        height: 60px;
+    }
+    .mobile-toggle{
+    padding-top: 19px;
+}
 
     .menu{
         float: left;
@@ -117,8 +129,8 @@ nav a.contact:hover{
         margin: 10px 0 !important;
     }
     .nav-1 .logo {
-        min-width: 290px;
-        margin-top: 18px;
+        min-width: 259px;
+        margin-top: 7px;
     }
 
 }
@@ -126,7 +138,7 @@ nav a.contact:hover{
 @media (max-width: 767px){
 
     .nav-1 .logo {
-        margin-top: 24px;
+        margin-top: 7px;
     }
 
     .menu-container{}
@@ -135,7 +147,7 @@ nav a.contact:hover{
 
 @media (max-width: 400px){
     .nav-1 .logo {
-        margin-top: 30px;
+        margin-top: 12px;
         min-width: 200px;
         margin-bottom: 12px;
     }

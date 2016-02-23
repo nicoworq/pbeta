@@ -11,7 +11,7 @@
     <body>
         <a id="home" class="in-page-link"></a>
 
-        <div class="nav-container" style="min-height: 100px;">	
+        <div class="nav-container">	
             <nav class="nav-1 fixed">
                 <div class="navbar">
                     <div class="container">

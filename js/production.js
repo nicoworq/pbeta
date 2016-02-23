@@ -357,7 +357,7 @@ $(window).load(function () {
     // Sticky nav
 
     if (!$('nav').hasClass('overlay')) {
-        $('.nav-container').css('min-height', $('.navbar').height());
+        //$('.nav-container').css('min-height', $('.navbar').height());
     }
 
 
