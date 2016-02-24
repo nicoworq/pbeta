@@ -72,7 +72,7 @@
                             <div class="post-texto">
                                 <h3 class="post-titulo">Diseño de los post’s</h3>
                                 <p class="post-contenido">The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
-                                
+
                                 <p class="post-contenido">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look.</p>
                             </div>
                         </div>
@@ -89,53 +89,20 @@
 
             <?php include_once './layout/success.php'; ?>
 
-
             <?php include_once './layout/contact.php'; ?>
 
             <?php include_once './layout/map.php'; ?>
 
-
-            <section class="pbeta-news-home">
-                <div class="container">
-                    <div class="row">
-
-                        <div class="col-md-4 col-sm-12 col-xs-12">
-                            <h3>Suscribite a nuestro Newsletter<br/><span>Deja tu email tranquilo, no hacemos Spam.</span></h3>
-                        </div>
-                        <div class="col-md-4 col-sm-12 col-xs-12">
-
-                            <form id="form-suscribir-footer" action="" method="post">
-                                <div class="ajaxing">
-                                    <img src="img/loader.png" alt="Loading">
-                                </div>                                
-                                <input type="text" name="sex" placeholder="Sex">
-                                <input type="text" name="email_visitante" placeholder="Ingresa tu email">
-                                <button><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAARCAYAAADUryzEAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAM9JREFUeNpi+v//PwMObA7EL4B4DRCz4VKHS7M0EH/8jwCbcBnCxIAdCAMxHxLfF4gXAjEzhko8Xsj6jwmWAjEzMV6A4QoshswCYkZiDcBlyHSYISxAX2hAMS5wA4hPALEFklgGEH8B4lKQASfRAoxYUALEP0DO+M9APvgLisZPFBjQDvKCGRBrElBYCVWHDPqBuJaYWKjEFwvkROEcYtNBJiUpUQ+L5lXomvFlprdosbMZiGNA0YauEJcBT4HYDYjfAPFaIA4B4l/YFAIEGADeMe8MWNVVCgAAAABJRU5ErkJggg=="/></button>
-                            </form>
-                        </div>
-                        <div class="col-md-4 pull-right col-sm-12 col-xs-12">
-                            <ul class="pbeta-redes">
-                                <li><a href="#"><i class="worq-icon-facebook"></i></a></li>
-                                <li><a href="#"><i class="worq-icon-linkedin"></i></a></li>
-                                <li><a href="#"><i class="worq-icon-google"></i></a></li>
-                            </ul>
-                        </div>
-
-                    </div>
-                </div>
-
-
-            </section>
-
-
-
+            <?php include_once './layout/newsletter-redes.php'; ?>
 
             <?php include_once './layout/footer.php'; ?>
         </div>
 
 
 
-        <?php include_once './layout/footer-scripts.php'; ?>
+        <?php
+        include_once './layout/footer-scripts.php';
 
 
 
+        

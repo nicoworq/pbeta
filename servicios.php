@@ -68,7 +68,7 @@
                         <div class="row">
                             <div class="col-md-12">
                                 <a href="#contacto" class="inner-link2 btn-beta btn-azul" style=" margin: 30px auto;width: 163px; display: block;">Quiero saber más</a>
-                                
+
                                 <a class="servicio-imagen" href="caso-exito.php"  style="background-image:url(img/caso-exito1.jpg); ">
                                     <h5>Caso de éxito</h5>
                                     <h4>Pascal</h4>
@@ -131,8 +131,8 @@
                         </div>
                         <div class="row">
                             <div class="col-md-12">
-                                
-                                 <a href="#contacto" class="inner-link2 btn-beta btn-azul" style=" margin: 30px auto;width: 163px; display: block;">Quiero saber más</a>
+
+                                <a href="#contacto" class="inner-link2 btn-beta btn-azul" style=" margin: 30px auto;width: 163px; display: block;">Quiero saber más</a>
                                 <a class="servicio-imagen" href="caso-exito.php"  style="background-image:url(img/caso-exito1.jpg); ">
                                     <h5>Caso de éxito</h5>
                                     <h4>Pascal</h4>
@@ -195,7 +195,7 @@
                         </div>
                         <div class="row">
                             <div class="col-md-12">
-                                 <a href="#contacto" class="inner-link2 btn-beta btn-azul" style="margin-top: 0px;">Quiero saber más</a>
+                                <a href="#contacto" class="inner-link2 btn-beta btn-azul" style="margin-top: 0px;">Quiero saber más</a>
                                 <a class="servicio-imagen" href="caso-exito.php"  style="background-image:url(img/caso-exito1.jpg); ">
                                     <h5>Caso de éxito</h5>
                                     <h4>Pascal</h4>
@@ -218,7 +218,7 @@
                                         <p>No solo tenemos en cuenta las necesidades que se plantean, sino que también analizamos el 
                                             mercado, el entorno y el público objetivo de cada situación.</p>
                                         <p>Nuestros sitios web son realizados exclusivamente con el equipo de <br/> <a href="http://worq.com.ar" target="blank">worq.com.ar | Sitios web de 
-                                            alta performance</a>.</p>
+                                                alta performance</a>.</p>
                                     </div>
 
                                 </div>
@@ -247,7 +247,7 @@
                         </div>
                         <div class="row">
                             <div class="col-md-12">
-                                 <a href="#contacto" class="inner-link2 btn-beta btn-azul" style=" margin: 30px auto;width: 163px; display: block;">Quiero saber más</a>
+                                <a href="#contacto" class="inner-link2 btn-beta btn-azul" style=" margin: 30px auto;width: 163px; display: block;">Quiero saber más</a>
                                 <a class="servicio-imagen" href="caso-exito.php"  style="background-image:url(img/caso-exito1.jpg); ">
                                     <h5>Caso de éxito</h5>
                                     <h4>Pascal</h4>
@@ -307,7 +307,7 @@
                         </div>
                         <div class="row">
                             <div class="col-md-12">
-                                 <a href="#contacto" class="inner-link2 btn-beta btn-azul" style=" margin: 30px auto;width: 163px; display: block;">Quiero saber más</a>
+                                <a href="#contacto" class="inner-link2 btn-beta btn-azul" style=" margin: 30px auto;width: 163px; display: block;">Quiero saber más</a>
                                 <a class="servicio-imagen" href="caso-exito.php"  style="background-image:url(img/caso-exito1.jpg); ">
                                     <h5>Caso de éxito</h5>
                                     <h4>Pascal</h4>
@@ -324,13 +324,13 @@
                         <div class="row">
                             <div class="col-md-8">
                                 <h3 class="servicio-titulo">Acciones de alto impacto</h3>
-                                
+
                                 <div class="row">
                                     <div class="col-md-11">
                                         <p>¡Bonus track! Además de crear estrategias y tácticas comerciales para potenciar empresas y organizaciones sin fin de lucro también creamos acciones especiales con un fin específico y un tiempo determinado que buscan resultados concretos. </p>
                                         <p>Estas están fuera de la estrategia general de la empresa y la potencian a través de su diferencial extraordinario</p>
                                     </div>
-                                    
+
                                 </div>
                             </div>
                             <div class="col-md-4">
@@ -372,7 +372,7 @@
                         </div>
                         <div class="row">
                             <div class="col-md-12">
-                                 <a href="#contacto" class="inner-link2 btn-beta btn-azul" style=" margin: 30px auto;width: 163px; display: block;">Quiero saber más</a>
+                                <a href="#contacto" class="inner-link2 btn-beta btn-azul" style=" margin: 30px auto;width: 163px; display: block;">Quiero saber más</a>
                                 <a class="servicio-imagen" href="caso-exito.php"  style="background-image:url(img/caso-exito1.jpg); ">
                                     <h5>Caso de éxito</h5>
                                     <h4>Pascal</h4>
@@ -384,32 +384,7 @@
             </section>
             <?php include_once './layout/contact.php'; ?>
             <?php include_once './layout/map.php'; ?>
-            <section class="pbeta-news-home">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-4 col-sm-12 col-xs-12">
-                            <h3>Suscribite a nuestro Newsletter<br/><span>Deja tu email tranquilo, no hacemos Spam.</span></h3>
-                        </div>
-                        <div class="col-md-4 col-sm-12 col-xs-12">
-                            <form id="form-suscribir-footer" action="" method="post">
-                                <div class="ajaxing">
-                                    <img src="img/loader.png" alt="Loading">
-                                </div>                                
-                                <input type="text" name="sex" placeholder="Sex">
-                                <input type="text" name="email_visitante" placeholder="Ingresa tu email">
-                                <button><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAARCAYAAADUryzEAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAM9JREFUeNpi+v//PwMObA7EL4B4DRCz4VKHS7M0EH/8jwCbcBnCxIAdCAMxHxLfF4gXAjEzhko8Xsj6jwmWAjEzMV6A4QoshswCYkZiDcBlyHSYISxAX2hAMS5wA4hPALEFklgGEH8B4lKQASfRAoxYUALEP0DO+M9APvgLisZPFBjQDvKCGRBrElBYCVWHDPqBuJaYWKjEFwvkROEcYtNBJiUpUQ+L5lXomvFlprdosbMZiGNA0YauEJcBT4HYDYjfAPFaIA4B4l/YFAIEGADeMe8MWNVVCgAAAABJRU5ErkJggg=="/></button>
-                            </form>
-                        </div>
-                        <div class="col-md-4 pull-right col-sm-12 col-xs-12">
-                            <ul class="pbeta-redes">
-                                <li><a href="#"><i class="worq-icon-facebook"></i></a></li>
-                                <li><a href="#"><i class="worq-icon-linkedin"></i></a></li>
-                                <li><a href="#"><i class="worq-icon-google"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </section>
+            <?php include_once './layout/newsletter-redes.php'; ?>
             <?php include_once './layout/footer.php'; ?>
         </div>
         <?php include_once './layout/footer-scripts.php'; ?>

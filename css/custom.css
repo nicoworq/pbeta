@@ -948,12 +948,18 @@ h5.caso-exito-bajada{
     padding-right: 0;
     padding-top: 19px;
 }
-#form-contacto input[type=text]{
+#form-contacto input{
     width: 100%;
     height: auto;
     line-height: 36px;
     margin-bottom: 15px;
     border: 1px solid white;
+    padding-left: 16px;
+    background: #fff;
+    border-radius: 3px;
+    font-size: 16px;
+    color: #888;
+    font-weight: 400;
 }
 #form-contacto input[type=submit]{
     background: #03233b;

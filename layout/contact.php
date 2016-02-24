@@ -19,13 +19,13 @@
 
             </div>
             <div class="col-md-6 pbeta-contacto-form">
-                <form id="form-contacto" action="php/ajax-form-contacto.php" method="post">
-                    <input type="text" placeholder="Sexo" name="sex">
-                    <input type="text" placeholder="Nombre y Apellido" name="nombre">
-                    <input type="text" placeholder="Email" name="email">
-                    <input type="text" placeholder="Telefono" name="telefono">
+                <form id="form-contacto" action="php/ajax-form-contacto.php" method="post"/>
+                    <input type="text" placeholder="Sexo" name="sex"/>
+                    <input type="text" placeholder="Nombre y Apellido" name="nombre"/>
+                    <input type="text" placeholder="Email" name="email"/>
+                    <input type="tel" placeholder="Telefono" name="telefono"/>
                     <textarea name="mensaje" placeholder="Mensaje"></textarea>
-                    <input class="btn-beta btn-deep-blue" type="submit" value="Contactanos">
+                    <input class="btn-beta btn-deep-blue" type="submit" value="Contactanos"/>
                 </form>
             </div>
         </div>

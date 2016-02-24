@@ -53,7 +53,7 @@ $(document).ready(function () {
     
     //form
     
-    $('input[type=text] , textarea').keydown(function () {
+    $('input[type=text] , textarea,input[type=tel]').keydown(function () {
         $(this).removeClass('input-error');
     });
 
@@ -64,7 +64,7 @@ $(document).ready(function () {
         
         var formOK = true;
 
-       form.find('input[type=text],textarea').not('input[name=sex]').each(function () {
+       form.find('input[type=text],textarea,input[type=tel]').not('input[name=sex]').each(function () {
             $(this).removeClass('input-error');
             if ($(this).val() === '') {
                 formOK = false;             
@@ -81,7 +81,15 @@ $(document).ready(function () {
         if (!validateEmail(form.find('input[name=email]').val())) {
             form.find('input[name=email]').addClass('input-error');
        
-            swal("Oops...", "Debe ingresar un Email Valido.", "error");
+            swal("Oops...", "Debe ingresar un Email Válido.", "error");
+            return false;
+        }
+        
+        var telephoneInput = form.find('input[type=tel]');
+        if (!validatePhone(telephoneInput.val())) {
+            telephoneInput.addClass('input-error');
+       
+            swal("Oops...", "Debe ingresar un numero telefónico válido.", "error");
             return false;
         }
 
@@ -344,7 +352,12 @@ $(document).ready(function () {
         var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
         return re.test(email);
     }
-
+    
+     function validatePhone(phone){
+        var re = /^[0-9\s(+)(\-)]*$/;
+        return re.test(phone);
+    }
+    
     if($(window).width() < 600){
         
             setTimeout(function(){
