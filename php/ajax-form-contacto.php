@@ -44,7 +44,7 @@ $mail->Password = "f0rmulario_de_worq_con_q";            // SMTP server password
 
 $mail->From = 'formulario@worq.com.ar';
 $mail->FromName = 'Formulario de Contacto Web';
-$mail->addAddress('nicolas@worq.com.ar', 'Nicolas');  // Add a recipient
+$mail->addAddress('contacto@proyectobeta.com.ar', 'Contacto');  // Add a recipient
 
 
 $mail->addReplyTo('formulario@worq.com.ar', 'Form');
