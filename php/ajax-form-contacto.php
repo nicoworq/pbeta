@@ -54,6 +54,7 @@ $mail->isHTML(true);                                  // Set email format to HTM
 $mail->Subject = 'Consulta Web';
 $mail->Body = $cuerpo_email;
 
+return false;
 
 if (!$mail->send()) {
 

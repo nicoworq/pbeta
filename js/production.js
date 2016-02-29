@@ -102,6 +102,7 @@ $(document).ready(function () {
             if (json.enviado) {
                 swal("Gracias!", "Se ha enviado tu consulta. Nos comunicaremos a la brevedad", "success");
                 form[0].reset();
+                ga('send', 'event', 'contacto-enviado','');
             } else {
                 swal("Oops...", "Error al enviar tu consulta!", "error");
 
@@ -146,6 +147,7 @@ $(document).ready(function () {
             if (json.enviado) {
                 swal("Gracias!", "Te has suscrito correctamente!", "success");
                 form[0].reset();
+                ga('send', 'event', 'suscripcion-newsletter','');
             } else {
                 swal("Oops...", "Error al suscribir!", "error");
             }

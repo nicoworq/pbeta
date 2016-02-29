@@ -971,6 +971,7 @@ h5.caso-exito-bajada{
 }
 #form-contacto input[type=submit]:hover{
     background: #0A4673;
+    color: white;
 }
 #form-contacto textarea{
     line-height: 37px;
