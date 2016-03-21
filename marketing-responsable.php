@@ -4,7 +4,7 @@
     <body>
 
 
-        <?php $navActive= ''; include_once './layout/nav.php'; ?>
+        <?php $navActive= 'responsable'; include_once './layout/nav.php'; ?>
 
 
         <div class="main-container">

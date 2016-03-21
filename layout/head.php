@@ -3,7 +3,7 @@
         <meta charset="utf-8">
         <title>Marketing responsable | Proyecto Beta</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+        <meta name="google-site-verification" content="HSUrVr4luKpZW0uRt3XgnycRfQsvy8e5tGBzyEl8oVc" />
         <link rel="icon" type="image/png" href="img/favicon.png">
         <!-- 
         <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all">

@@ -31,17 +31,23 @@
                             </div>
 
                             <div class="col-md-9 text-right col-sm-12 col-xs-12 menu-container">
-
+                                <!--
                                 <ul class="pbeta-redes pbeta-redes-header">
                                     <li><a href="https://www.facebook.com/ProyectoBetaMKT" target="blank"><i class="worq-icon-facebook"></i></a></li>
                                     <li><a href="https://www.linkedin.com/company/proyecto-beta?trk=biz-companies-cym" target="blank"><i class="worq-icon-linkedin"></i></a></li>
                                     <li><a href="https://plus.google.com/u/0/103707798096625533035/posts" target="blank"><i class="worq-icon-google"></i></a></li>
-                                </ul>
+                                </ul>-->
 
                                 <ul class="menu">
                                     <li>
                                         <a class="inner-link" href="#home">
                                             Home
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a class="inner-link" href="marketing-responsable.php">
+                                            Marketing responsable
                                         </a>
                                     </li>
 
@@ -111,8 +117,8 @@
                         </div>
 
                         <div class="col-sm-6 col-md-6 feature text-left intro-pbeta-texto">
-                            <h4>Agencia de Marketing
-                                Responsable</h4>
+                            <h1>Agencia de Marketing
+                                Responsable</h1>
                             <p>
                                 ¿Por qué Marketing Responsable? por que contamos con un equipo de profesionales en distintas áreas que está en constante búsqueda de resultados y mejoras para cada uno de nuestros clientes. <a href="marketing-responsable.php" class="ademas">Y además...</a></p>
                             <a href="servicios.php" class="btn-beta btn-azul">Conocé nuestros servicios</a>
@@ -181,7 +187,7 @@
                                     </g>
                                     </svg>
                                 </div>
-                                <h5>Marketing digital</h5>
+                                <h1>Marketing digital</h1>
                             </a>
                         </div>
                         <div class="col-sm-4 text-center">
@@ -243,7 +249,7 @@
                             </a>
                         </div>
                         <div class="col-sm-4 text-center ">
-                            <a href="servicios.php#marketing-responsable"  class="pbeta-servicio servicio5">
+                            <a href="marketing-responsable.php"  class="pbeta-servicio servicio5">
                                 <div class="servicios-sprite-container">
                                     <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                                          viewBox="0 0 133.2 138.6"  xml:space="preserve">
@@ -357,7 +363,7 @@
                     <div class="row">
                         <div class="col-sm-12 text-center">
                             <div class="pbeta-quote-container">
-                                <h2>Marketing Responsable</h2>
+                                <h1>Marketing Responsable</h1>
                                 <div class="pbeta-quote">
                                     Andaríamos mejor si no fuera porque
                                     hemos construido demasiados muros
@@ -367,7 +373,7 @@
                                 <p>Buscamos un mundo mejor. Queremos ser el puente entre las empresas y las ONG’s. Creemos que entre todos podemos hacer un mejor lugar para vivir. </p>
                                 <p>Es por eso que a través del marketing acercamos a las empresas
                                     y a las organizaciones no gubernamentales en busca de sinergia
-                                    y acciones en conjunto que traigan beneficios para ambas partes</p>
+                                    y acciones en conjunto que traigan beneficios para ambas partes.</p>
                                 <a class="btn-beta btn-dark" href="marketing-responsable.php">¡Quiero saber más!</a>
                             </div>
                         </div>

@@ -18,13 +18,13 @@
                     </div>
 
                     <div class="col-md-9 text-right col-sm-12 col-xs-12 menu-container">
-
+                        <!--
                         <ul class="pbeta-redes pbeta-redes-header">
                             <li><a href="https://www.facebook.com/ProyectoBetaMKT" target="blank"><i class="worq-icon-facebook"></i></a></li>
                             <li><a href="https://www.linkedin.com/company/proyecto-beta?trk=biz-companies-cym" target="blank"><i class="worq-icon-linkedin"></i></a></li>
                             <li><a href="https://plus.google.com/u/0/103707798096625533035/posts" target="blank"><i class="worq-icon-google"></i></a></li>
                         </ul>
-
+                        -->
                         <ul class="menu">
                             <li>
                                 <a class="inner-link <?php echo $navActive === 'home' ? 'active' : ''; ?>" href="index.php#home">
@@ -32,6 +32,11 @@
                                 </a>
                             </li>
 
+                            <li>
+                                <a class="inner-link <?php echo $navActive === 'responsable' ? 'active' : ''; ?>" href="marketing-responsable.php">
+                                    Marketing responsable
+                                </a>
+                            </li>
                             <li>
                                 <a class="inner-link <?php echo $navActive === 'institucional' ? 'active' : ''; ?>" href="index.php#institucional">
                                     Institucional
