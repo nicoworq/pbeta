@@ -73,7 +73,7 @@
                 </div>
                 <div class="col-md-3 col-xs-6">
                     <div class="cliente">
-                        <img src="img/clientes/tranquera.png" />
+                        <img src="img/clientes/barra-olimpica.png" />
                     </div>
                 </div>
                 <div class="col-md-3 col-xs-6">
@@ -104,7 +104,24 @@
                     </div>
                 </div>
             </div>
+            <div class="row  cliente-row">
+                <div class="col-md-6 col-xs-6">
+                    <div class="cliente">
+                        <img src="img/clientes/SIMA.png" style="max-width: 300px;" />
+                    </div>
+                </div>
+                <div class="col-md-6 col-xs-6">
+                    <div class="cliente">
+                        <img src="img/clientes/Marilyn.png" />
+                    </div>
+                </div>
+
+            </div>
         </div>
+
+
+        <!-- clientes mobile -->
+
         <div class="clientes-mobile">
 
             <div class="col-md-3 col-xs-6">
@@ -170,7 +187,7 @@
 
             <div class="col-md-3 col-xs-6">
                 <div class="cliente">
-                    <img src="img/clientes/tranquera.png" />
+                    <img src="img/clientes/barra-olimpica.png" />
                 </div>
             </div>
             <div class="col-md-3 col-xs-6">
@@ -201,6 +218,21 @@
                     <img src="img/clientes/worq.png" />
                 </div>
             </div>
+
+
+
+            <div class="col-md-3 col-xs-6">
+                <div class="cliente">
+                    <img src="img/clientes/SIMA.png" />
+                </div>
+            </div>
+            <div class="col-md-3 col-xs-6">
+                <div class="cliente">
+                    <img src="img/clientes/Marilyn.png" />
+                </div>
+            </div>
+
+
 
         </div>
 
